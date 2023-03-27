@@ -1,0 +1,258 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
+
+body{
+      font-family: 'Lato', sans-serif;
+}
+
+/**************
+01.navbar
+**************/
+.logo1{
+    width: 80%;
+}
+.nav-item{
+    font-size: 20px;
+    padding: 0 15px;
+}
+
+/************
+(a).hover effect for navitems
+*************/
+.hover-underline-animation {
+  display: inline-block;
+  position: relative;
+  color: 
+#8f8f8f;
+}
+.hover-underline-animation:after {
+  content: '';
+  position: absolute;
+  width: 100%;
+  transform: scaleX(0);
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: 
+#8f8f8f;
+  transform-origin: bottom right;
+  transition: transform 0.4s ease-out;
+}
+.hover-underline-animation:hover:after {
+  transform: scaleX(1);
+  transform-origin: bottom left;
+}
+
+/************
+(b).searchbar
+************/
+  .middle{
+    position:absolute;
+    top:40%;
+    left:85%;
+    transform:translate(-50%,-50%);
+  }
+  .input{
+    width:50px;
+    height:50px;
+    background:none;
+    border-radius:50px;
+    border:2px solid #515151;
+    box-sizing:border-box;
+    outline:none;
+    transition: width 0.4s ease-in-out,
+      border-radius 0.8s ease-in-out,
+      padding 0.2s;
+    transition-delay:0.4s;
+    color:rgb(32, 32, 32);
+    font-size:20px;
+    position: relative;
+    top:10px;
+  }
+
+  .inclicked{
+    width:360px;
+    border-radius:50px;
+    padding:0 15px;
+    padding-right:40px;
+  }
+
+  .btn{
+    position:absolute;
+    width:60px;
+    height:60px;
+    top:5px;
+    right:0;
+    box-sizing:border-box;
+    background:none;
+    border:none;
+    outline:none;
+    cursor:pointer;
+  }
+
+  .btn::before{
+    content:"";
+    width:3px;
+    height:25px;
+    background:rgb(0, 0, 0);
+    position:absolute;
+    transform:rotate(-45deg);
+    bottom:-10px;
+    right:-4px;
+    transition: all ease 0.3s;
+  }
+
+  .close::before,.close::after{
+    content:"";
+    width:3px;
+    height:30px;
+    background:rgb(255, 255, 255);
+    position:absolute;
+    bottom:12px;
+    right:28px;
+  }
+
+  .close::before{
+    transform:rotate(-45deg);
+    color: #000000;
+    background-color: #515151;
+  }
+
+  .close::after{
+    transform:rotate(45deg);
+    color: #000000;
+    background-color: #515151;
+  }
+  /*******************
+  2.owlcarousel
+  *******************/
+  .slide-content{
+    position: absolute;
+    top: 200px;
+    left:50px;
+    font-size: 60px;
+    color: #f0f0f0;
+    line-height: 1.4;
+    letter-spacing: 0;
+    margin-bottom: 0;
+  }
+  .slider-image{
+    width:90%;
+    height: 700px !important;
+  }
+  .owl-carousel .owl-nav button.owl-next, .owl-carousel .owl-nav button.owl-prev, .owl-carousel button.owl-dot {
+    background: 0 0;
+    color: rgb(198, 198, 198);
+    border: none;
+    padding: 0!important;
+    font: inherit;
+    font-size:50px;
+    position:relative;
+    bottom: 100px;
+    left: 600px;
+}
+  /********************
+  border bottom
+  ********************/
+  .border-bottom{
+    width: 90px;
+    height: 2px;
+    background-color: #2d2d2d;
+    margin-top: 15px;
+    margin-bottom: 15px;
+  }
+  .border-bottom1{
+    width: 100%;
+    height: 1px;
+    background-color: #2d2d2d;
+    margin-top: 15px;
+    margin-bottom: 15px;
+  }
+
+  /*********************
+  3.motto
+  *********************/
+  .motto{
+    background-color: #ffffff;
+  }
+  /*********************
+  4.about
+  *********************/
+  .icon2{
+    font-size: 24px;
+    padding-top: 10px;;
+  }
+  .img2{
+    height:100%;
+    width: 580px;
+  }
+
+
+  /***********************
+  5.gallery
+  ***********************/
+  .gallery {
+    position: relative;
+    width: 25%;
+  }
+  .image {
+    display: block;
+    width: 100%;
+    height: auto;
+  }
+  
+  .overlay {
+    position: absolute;
+    bottom: 0;
+    left: 100%;
+    right: 0;
+    background-color: #000000;
+    overflow: hidden;
+    width: 0;
+    height: 100%;
+    transition: .3s ease;
+    opacity: 75%;
+  }
+  
+  .gallery:hover .overlay {
+    width: 100%;
+    left: 0;
+  }
+  
+  .text {
+    color: rgb(255, 255, 255);
+    font-size: 20px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    white-space: nowrap;
+  }
+  .galbtn{
+    color: #000000;
+    border: 2px solid rgb(0, 0, 0);
+    border-radius: 1px;
+    padding: 15px 25px;
+}
+.galbtn:hover{
+  color:#f0f0f0;
+  background-color: #000000;
+  border:#8f8f8f;
+}
+/********************
+cards
+*********************/
+.card-img-top{
+  width: 100%;
+}
+
+/*******************
+footer
+*******************/
+.footer{
+  background-color: #515151;
+  color:#fff;
+  width:100%;
+}
