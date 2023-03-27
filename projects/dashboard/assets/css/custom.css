@@ -1,0 +1,33 @@
+.dashboard-main {
+    position: relative;
+    margin-top: 56px;
+    display: flex;
+}
+
+.left-sidebar {
+    background-color: #ccc;
+    height: 100vh;
+    width: 250px;
+    position: fixed;
+    left: 0;
+    top: 56px;
+    overflow-y: auto;
+    transition: all ease 0.3s;
+    padding: 20px;
+}
+
+.left-sidebar.active {
+    width: 100px;
+}
+
+.main-content {
+    margin-left: 250px;
+    width: 100%;
+    overflow-x: hidden;
+    padding: 20px;
+    transition: all ease 0.3s;
+}
+
+.main-content.active {
+    margin-left: 100px;
+}
