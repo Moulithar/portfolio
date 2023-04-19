@@ -1,0 +1,55 @@
+ @import url('https://fonts.googleapis.com/css2?family=Poppins:ital@0;1&family=Shantell+Sans:ital,wght@1,300&display=swap');
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing:border-box;
+    font-family:'Times New Roman', Times, serif;
+}
+#navbara
+{
+position: sticky;
+top:0;
+left:0;
+z-index: 100;
+padding: .5rem 5rem;
+background-color:rgb(234, 238, 238) !important;
+box-shadow: 5px 5px 20px rgba(0, 0, 0, .5)
+}
+.navbar .navbar-brand{
+    font-size: 50px;
+    font-weight: 800;
+    color: #29f700 !important;
+}
+#navbarSupportedContent a
+{
+color: #9acf55;
+border-bottom: 2px solid transparent !important;
+font-size: 20px !important;
+}
+#navbarSupportedContent a:hover{
+    border-bottom: 2px solid red;   
+}
+#navbarSupportedContent button{
+    background: #29f700;
+    width: 7rem;
+    border-radius: 15px;
+    font-size: 20px;
+}
+section{
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+#home{
+    background: linear-gradient(rgba(0,0,0,.3),(0,0,0,.4)) ,url(bg.jfif);
+    background-size: cover;
+    background-position: center;
+    background-image: url(https://www.freepik.com/free-photo/landscape-shot-beautiful-cholatse-mountains-body-water-khumbu-nepal_11541870.htm#query=nature&position=0&from_view=keyword&track=sph);
+
+}
+
