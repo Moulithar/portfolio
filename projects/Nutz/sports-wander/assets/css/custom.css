@@ -139,7 +139,8 @@ off-canvas
 2.banner
 *******************/
 .banner{
-    background: url("../images/banner.svg");
+    /* background: url("../images/banner.svg"); */
+    background: url("../images/banner-compressed.png");
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
