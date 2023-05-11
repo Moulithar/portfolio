@@ -1,0 +1,64 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu&display=swap');
+.carbon-btn a span{
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 500;
+}
+.carbon-btn a:hover{
+    background-color: #fff !important;
+    color:#134380;
+    
+}
+.carbon-btn a span:hover {
+    color: #134380;
+}
+.carbon-btn a:hover{
+    color:#134380;
+}
+
+.ca-btn .c-btn{
+    background-color: #134380;
+    color:#fff;
+    font-size: 15px;
+    text-transform: uppercase;
+    margin-top: 10px;
+    padding:10px 25px;
+    border-radius: 9px;
+    font-family: Arial, Helvetica, sans-serif;
+    letter-spacing: 2px;
+    border: 1px soild #134380;
+    border:none;
+}
+.ca-btn .c-btn:hover{
+    background-color: #fff;
+    color:#134380;
+    font-size: 14px;
+    border: 1px solid #134380;
+    cursor: pointer;
+}
+.ca-btn .c-btn:active{
+    background-color: #134380;
+    color:#fff;
+    font-size: 14px;
+    border: 1px solid #134380;
+    cursor: pointer;
+}
+.signup-logo{
+    width:200px;
+    height:200px;
+}
+
+@media screen and (max-width:767px){
+    .terms{
+        padding: 0px 60px;
+    }
+}
+
+/* .ca-btn a{
+    text-decoration: none;
+    border: none;
+}
+.ca-btn a:hover{
+    text-decoration: none;
+    border: none;
+} */
+
