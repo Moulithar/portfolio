@@ -109,22 +109,22 @@
 
     .customize-card-list-left .one::after {
         right: -58px;
-        top: 35px;  
+        top: 41px;  
     }
 
     .customize-card-list-left .two::after {
         right: -11px;
-        top: 35px;   
+        top: 41px;   
     }
 
     .customize-card-list-left .three::before {
         right: 8px;
-        top:35px;
+        top:41px;
     }
 
     .customize-card-list-left .four::before { 
-        right: 84px;
-        top: 35px;  
+        right: px;
+        top: 41px;  
     }
 
     .footer .footer-banner {

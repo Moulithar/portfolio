@@ -175,7 +175,10 @@ phone
         width: 37px;
         height: 37px;
     }
-
+    .number-white-bg{
+        width:46px;
+        height: 46px;
+    }
     .icon-organization {
         width:21px;
         height:21px;
@@ -205,7 +208,7 @@ phone
     4.stadium
     *******************/
     .stadium{
-        padding: 250px 0px 90px 0;
+        padding: 150px 0px 90px 0;
         /* font-size: 40px; */
         font-weight: 600;
     }
@@ -223,46 +226,50 @@ phone
 
     .customize-card-list-right li:not(:last-child) {
         margin-right: 0;
-        padding: 0 44px;
+        padding: 0 70px;
     }
 
     .customize-card-list-left .one::after {
-        right: -58px;
-        top: 32px;  
+        right: -44px;
+        top: 22px;  
     }
 
     .customize-card-list-left .two::after {
         right: -10px;
-        top: 32px;   
+        top: 22px;   
     }
 
-    .icon-one{
-        width:46px;
-        height:46px;
+    .icon-no-one{
+        width:30px;
+        height:24px;
+        background-size: 30px;
     }
 
-    .icon-two{
-        width:46px;
-        height:46px;
+    .icon-no-two{
+        width:34px;
+        height:22px;
+        background-size: 34px;
     }
 
     .customize-card-list-right .three::before {
         right: 27px;
-        top:32px;
+        top:22px;
     }
     .customize-card-list-right .four::before { 
-        right: 74px;
-        top: 32px;  
+        right: 87px;
+        top: 22px;  
     }
 
-    .icon-three{
-        width:46px;
-        height:46px;
+    .icon-no-three{
+        width:36px;
+        height:25px;
+        background-size: 36px;
     }
 
-    .icon-four{
-        width:46px;
-        height:46px;
+    .icon-no-four{
+        width:31px;
+        height:25px;
+        background-size: 31px;
     }
 
     .stadium p{
@@ -310,8 +317,8 @@ phone
     .device h4{
         font-size: 13px;
         font-weight: 500;
-        padding-top: 20px;
-        margin-bottom: 100px;
+        padding-top: 14px;
+        margin-bottom: 68px;
     }
 
     .icon-droid{

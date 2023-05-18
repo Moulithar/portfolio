@@ -54,7 +54,7 @@ h1 span{
     width: 46px;
     height: 46px;
     border-radius: 50%;
-    margin-right: 10px;
+     margin-right: 10px; 
 }
 
 .login-list li:not(:last-child) {
@@ -98,13 +98,6 @@ h1 span{
  color: #F90E13;
 }
 
- /* .header ul li a {
-  border-bottom: solid 3px #f90e13;  
-  transform: scaleX(0);  
-  transition: all ease 0.3s;
-}
-.header a.fromLeft:after{ transform-origin: 100% 50%; }
-.header a.fromLeft:hover:after{ transform: scaleX(1); transform-origin:   0% 50%; } */ */
 /******************
 off-canvas 
 *******************/
@@ -134,6 +127,7 @@ off-canvas
     top: 20px;
     right: 20px;
 }
+
 
 /******************
 2.banner
@@ -188,22 +182,25 @@ off-canvas
 }
 
 .banner .card{
-    margin: 0 0 20px;
+    margin: 0px 26px 50px 0px;
     color:black;
     background-color: #FFFFFF;
     display:flex;
     justify-content: center;
     align-items: center;
-    padding: 30px 20px 14px;
+    padding: 30px 20px;
+    border-radius: 11px;
 }
 
 .banner .card h3{
     font-size: 48px;
+    line-height: 48px;
     font-weight: 500;
-    line-height: 72px;
+    /* line-height: 72px; */
     letter-spacing: -0.005em;
     text-align: center;
     position:relative;
+    margin-top: 28px;
 }
 
 .banner .card h4{
@@ -225,6 +222,11 @@ off-canvas
 
 .insight h3{
     text-align: center;
+    font-size: 48px;
+    font-weight: 600;
+    text-transform: capitalize;
+    margin-top: 43px;
+
 }
 
 /*******************
@@ -384,7 +386,7 @@ off-canvas
 
 .customize-card-list-left li:not(:last-child) {
     margin-right: 0;
-    padding-right: 150px;
+    padding-right: 200px;
 }
 
 .customize-card-list-right {
@@ -393,7 +395,7 @@ off-canvas
 
 .customize-card-list-right li:not(:last-child) {
     margin-right: 0;
-    padding: 0 50px;
+    padding: 0 100px;
 }
 
 .customize-card-list-left li {
@@ -407,7 +409,7 @@ off-canvas
     border-bottom: 5px dashed #F9FAFC;
     width: 100%;
     right: -58px;
-    top: 35px;  
+    top: 41px;  
 }
 .customize-card-list-left .two::after {
     content: '';
@@ -416,7 +418,7 @@ off-canvas
     border-bottom: 5px dashed #F9FAFC;
     width: 100%;
     right: 5px;
-    top: 35px;   
+    top: 41px;   
 }
 
 .customize-card-list-right li {
@@ -430,7 +432,7 @@ off-canvas
     border-bottom: 5px dashed #F9FAFC;
     width: 100%;
     right: 23px;
-    top:35px;
+    top:41px;
 }
 .customize-card-list-left .four::before {
     content: '';
@@ -438,8 +440,8 @@ off-canvas
     z-index: -1;
     border-bottom: 5px dashed #F9FAFC;
     width: 100%;
-    right: 88px;
-    top: 35px;  
+    right: 152px;
+    top: 41px;  
 }
 
 .customize-card-list-right .three::before {
@@ -449,7 +451,7 @@ off-canvas
     border-bottom: 5px dashed #F9FAFC;
     width: 100%;
     right: 0;
-    top:35px;
+    top:41px;
 }
 .customize-card-list-right .four::before {
     content: '';
@@ -457,8 +459,8 @@ off-canvas
     z-index: -1;
     border-bottom: 5px dashed #F9FAFC;
     width: 100%;
-    right: 88px;
-    top: 35px;  
+    right: 148px;
+    top: 41px;  
 }
 
 /*******************
@@ -473,21 +475,21 @@ off-canvas
 .device h2{
     font-size: 48px;
     font-weight: 600;
-    line-height: 72px;
+    line-height: 48px;
     letter-spacing: -0.005em;
     text-align: center;
     padding-top: 47px;
-    padding-bottom:57px;
+    padding-bottom:67px;
 }
 
 .device h4{
     font-size: 28px;
     font-weight: 500;
-    line-height: 42px;
+    line-height: 28px;
     letter-spacing: 0.0025em;
     text-align: center;
-    padding-top:36px;
-    margin-bottom:168px;
+    padding-top:23px;
+    margin-bottom:75px;
 }
 
 /*******************
@@ -672,4 +674,19 @@ ol, ul {
     line-height: 24px;
     text-align: right;
     color: #21212180;
+}
+
+/**************correction***************/
+.number-white-bg{
+    border-radius: 50%;
+    background-color: #ffffff;
+    width: 92px;
+    height: 92px;
+}
+
+.header-blue-bg{
+    border-radius: 50%;
+    background-color: #b9d2fc;
+    width: 46px;
+    height: 46px;
 }

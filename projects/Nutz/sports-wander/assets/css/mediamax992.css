@@ -75,7 +75,7 @@
         padding-right: 100px;
     }
     .customize-card-list-right li:not(:last-child) {
-        padding: 0px 125px;
+        padding: 0px 150px;
     }
     .customize-card-list-left .two::after {
         right: 1px;
@@ -84,7 +84,7 @@
         right: 11px;
     }
     .customize-card-list-right .four::before {
-        right: 84px;
+        right: 99px;
     }
     .stadium-heading h2{
         font-size:38px;

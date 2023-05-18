@@ -49,31 +49,31 @@
     }
     
     .customize-card-list-left li:not(:last-child) {
-        padding-right: 55px;
+        padding-right: 100px;
     }
 
     .customize-card-list-right li:not(:last-child) {
         margin-right: 0;
-        padding: 0 10px;
+        padding: 0 141px;
     }
 
     .customize-card-list-left .one::after {
         right: -58px;
-        top: 35px;  
+        top: 41px;  
     }
 
     .customize-card-list-left .two::after {
         right: -11px;
-        top: 35px;   
+        top: 41px;   
     }
 
     .customize-card-list-leftt .three::before {
         right: 3px;
-        top:35px;
+        top:41px;
     }
 
     .customize-card-list-left .four::before { 
-        right: 95px;
-        top: 35px;  
+        right: 147px;
+        top: 41px;  
     }
 }
