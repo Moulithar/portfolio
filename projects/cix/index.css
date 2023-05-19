@@ -1,0 +1,16 @@
+.transfer-btn{
+    background: #134380;
+    color: #ffffff;
+    margin: 0;
+    text-decoration: none;
+    text-transform: none;
+ padding: 12px 0px 12px;
+    /* border-radius: 60px 60px 60px 60px; */
+    font-size: 10px !important;
+    font-family: Inter,Arial,sans-serif;
+    font-weight: 700 !important;
+    color: #ffffff;
+    line-height: 120% !important;
+    width: 80px;
+    margin-left: 10px !important;
+}
