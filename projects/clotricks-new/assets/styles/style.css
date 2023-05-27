@@ -298,6 +298,15 @@ media query for 767px(mobile-view)
         width: 80px;
        
 }
+.banner h1:after{
+    width: 50px;
+}
+
+.banner h1:before {
+ 
+    width: 50px;
+
+}
 
 /**********************************/
   
