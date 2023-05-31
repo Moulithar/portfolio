@@ -7,6 +7,10 @@ body{
 }
 
 /* 01.header */
+.banner{
+    padding-top: 50px;
+}
+
 .gold-logo{
     width: 200px;
 }
@@ -75,6 +79,10 @@ ul li{
         width: 300px;
     }
 
+    .gold-logo{
+        width: 100px;
+    }
+    
     .design-img{
         height: 150px !important;
     }
