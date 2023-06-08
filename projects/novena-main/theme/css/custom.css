@@ -246,3 +246,14 @@ margin-top: 25px;
     /* border: 1px solid #fff; */
     border-radius: 5px;
   }
+
+.contact-block i {
+    color:#4169E1;
+}
+
+.doctors .btn-group .btn.active {
+    box-shadow: none !important;
+    border-color: transparent;
+    background: #4169E1;
+    color: #fff;
+}
