@@ -1,0 +1,78 @@
+  @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+
+
+
+body{
+    color: #3b3a3b;
+    background-color: #fff;
+    font-family: 'Roboto', sans-serif;
+    font-family: 'Times New Roman', Times, serif;
+    text-align: justify;
+    /* letter-spacing: 0.5px; */
+}
+
+.about p{
+    font-family: 'Roboto', sans-serif;
+    font-size: 25px;
+    margin-top: 30px;
+}
+
+.right-top.gold-corner{
+    width: 150px;
+    height: 40px;
+    background-color:  #eab676;
+}
+
+.left-bottom.gold-corner{
+    width: 150px;
+    height: 40px;
+    background-color:  #eab676;
+}
+
+.ensure h2{
+    color: #eda54d;
+}
+
+.about-logo{
+    height: 50px;
+}
+.about-logo-pri{
+    height: 80px;
+}
+.vision{
+    background-color: #eab676;
+    padding: 50px;
+}
+.header-logo{
+    height: 100%;
+    object-fit: cover;
+    width: 120px;
+}
+.about-logo-sec{
+    height: 60px;
+}
+
+    @media (max-width: 992px){
+
+        .vision p{
+            font-size: 15px !important;
+        }
+        .vision{
+            background-color: #eab676;
+            padding: 20px;
+        }
+        .right-top.gold-corner{
+            width: 80px;
+            height: 30px;         
+        }
+        
+        .left-bottom.gold-corner{
+            width: 80px;
+            height: 30px;  
+        }
+        .about p{
+            font-size: 20px;
+          
+        }
+    }
