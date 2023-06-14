@@ -252,10 +252,12 @@ margin-top: 25px;
 }
 
 .navigation .dropdown-item:hover{
-    background: #7b97ea !important;
+    background: #ffffff !important;
 }
 
-
+.navigation li:last-child .dropdown-item{
+    
+}
 .navigation .dropdown-submenu.active > .dropdown-toggle, .navigation .dropdown-submenu:hover > .dropdown-item, .navigation .dropdown-item.active, .navigation .dropdown-item:hover {
     background: #91a8ee;
     color: #e12454;
