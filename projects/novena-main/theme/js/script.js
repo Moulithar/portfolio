@@ -224,6 +224,8 @@
     });
   }
 
+  // navbar-bg-change
+  
   $(window).scroll(function () {
     var scroll = $(window).scrollTop();
 
