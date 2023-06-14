@@ -53,26 +53,26 @@ body{
     height: 60px;
 }
 
-    @media (max-width: 992px){
+@media (max-width: 992px){
 
-        .vision p{
-            font-size: 15px !important;
-        }
-        .vision{
-            background-color: #eab676;
-            padding: 20px;
-        }
-        .right-top.gold-corner{
-            width: 80px;
-            height: 30px;         
-        }
-        
-        .left-bottom.gold-corner{
-            width: 80px;
-            height: 30px;  
-        }
-        .about p{
-            font-size: 20px;
-          
-        }
+    .vision p{
+        font-size: 15px !important;
     }
+    .vision{
+        background-color: #eab676;
+        padding: 20px;
+    }
+    .right-top.gold-corner{
+        width: 80px;
+        height: 30px;         
+    }
+    
+    .left-bottom.gold-corner{
+        width: 80px;
+        height: 30px;  
+    }
+    .about p{
+        font-size: 20px;
+        
+    }
+}
