@@ -293,6 +293,10 @@ margin-top: 25px;
     /* overflow-y: auto; */
   }
   @media (max-width:992px){
+    
+  .logo-pri{
+    width: 90%;
+  }
     .scrollable-menu
   {
       overflow-x: auto;
