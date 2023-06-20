@@ -244,6 +244,7 @@
                 margin-bottom:20px;
             }
 
+
         /* --------------------------------------------------------------
             SOCIAL
         ----------------------------------------------------------------- */
@@ -292,9 +293,25 @@
                     margin-top: 8px;
                 }
 
+              .blue-btn{
+                background-color: #337ab7;
+                color: #fff;
+                border-radius: 3px;
+                text-align: left;
+              }
+
+              .blue-btn input{
+                background-color: #337ab7;
+                color: #fff !important;
+                border: 1px solid #337ab7 !important;             
+                /* color: #2c3e50; */
+                font-size: 14px;
+              }
+             
             @media (max-width: 992px){
                 .cbox{
                     width: 10% !important;
+                    margin-bottom: 20px;
                 }
                 .my-label{
                     width: 80% !important;
@@ -323,8 +340,8 @@
                 }
                 .c-box{
                 display: block;
-            }
-        }
+            }}
+
         /* --------------------------------------------------------------
             RESPONSIVE
         ----------------------------------------------------------------- */
@@ -512,8 +529,11 @@ form.form p label { color: #000000; }
 
 				 <div class="row c-box">
                             <div class="col-lg-2"></div>
-                            <div class="col-lg-10 d-lg-block d-flex justify-content-center">
-                                <input type="checkbox" class="cbox"  name="972473_78454pi_972473_78454_540076" id="972473_78454pi_972473_78454_540076" value="540076" onchange="">
+                            <div class="col-lg-10 d-lg-block">
+                                
+                                    <input type="checkbox" class="cbox"  name="972473_78454pi_972473_78454_540076" id="972473_78454pi_972473_78454_540076" value="540076" onchange="">
+                               
+                                
                                 <label class="my-label inline" for="972473_78454pi_972473_78454_540076">Click here to start receiving daily price assessments through CIX Carbon Daily</label>
                             </div>
 				</div>
@@ -547,13 +567,17 @@ form.form p label { color: #000000; }
 
 		<!-- forces IE5-8 to correctly submit UTF8 content  -->
 		<input name="_utf8" type="hidden" value="&#9731;">
-        <div>
-
-            <a href="https://marketing.climateimpactx.com/l/972473/2023-06-15/2c95y" class="">
-                <p class="submit">
-                <input type="submit" accesskey="s" value="Sign up" />
-                </p>
-            </a>
+        <div class="row">
+            <div class="col-lg-3"></div>
+            <div class="col-lg-9">
+                <a href="https://marketing.climateimpactx.com/l/972473/2023-06-15/2c95y" class="">
+                    <p class=" blue-btn">
+                    <input type="submit" class="" accesskey="s" value="Sign up" />
+                    <!-- <button class="blue-btn text-center">sign up</button> -->
+                    </p>
+                </a>
+            </div>
+          
         </div>
         <!-- <div>
             <a href="https://www.w3schools.com" class="">
@@ -561,9 +585,13 @@ form.form p label { color: #000000; }
             </a>
         </div> -->
         <div class="row">        
-                <p class="left-align submit"> <font size="2">By clicking on sign up, you agree to CIX's
+            <div class="col-lg-3"></div>
+            <div class="col-lg-9">
+                <p class="left-align"> <font size="2">By clicking on sign up, you agree to CIX's
                     <a href="https://uploads-ssl.webflow.com/641b1194b8c52067b6a71269/645b5c706c6bbc70a080f8e5_CIX%20Data%20Subscription%20Terms%20and%20Conditions.pdf">Terms and Conditions of Use</a>
                 </font></p
+            </div>
+                
             </div>
           
         </div>
