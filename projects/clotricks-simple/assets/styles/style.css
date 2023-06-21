@@ -1,7 +1,4 @@
-  @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
-
-
-
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
 
 body{
     color: #3b3a3b;
@@ -37,23 +34,71 @@ body{
 .about-logo{
     height: 50px;
 }
+
 .about-logo-pri{
     height: 80px;
 }
+
 .vision{
     background-color: #eab676;
     padding: 50px;
 }
+
 .header-logo{
     height: 100%;
     object-fit: cover;
     width: 120px;
 }
+
 .about-logo-sec{
     height: 60px;
 }
 
-.pages.container-fluid{
+.bg-1{
+    background-image: url(../images/Clotricks\ Brochure_page-0001.jpg);   
+}
+.bg-2{
+    background-image: url(../images/Clotricks\ Brochure_page-0002.jpg);   
+}
+.bg-3{
+    background-image: url(../images/Clotricks\ Brochure_page-0003.jpg);   
+}
+.bg-4{
+    background-image: url(../images/Clotricks\ Brochure_page-0004.jpg);   
+}
+.bg-5{
+    background-image: url(../images/Clotricks\ Brochure_page-0005.jpg);   
+}
+.bg-6{
+    background-image: url(../images/Clotricks\ Brochure_page-0006.jpg);   
+}
+.bg-7{
+    background-image: url(../images/Clotricks\ Brochure_page-0007.jpg);   
+}
+.bg-8{
+    background-image: url(../images/Clotricks\ Brochure_page-0008.jpg);   
+}
+.bg-9{
+    background-image: url(../images/Clotricks\ Brochure_page-0009.jpg);   
+}
+.bg-10{
+    background-image: url(../images/Clotricks\ Brochure_page-0010.jpg);   
+}
+.bg-11{
+    background-image: url(../images/Clotricks\ Brochure_page-0011.jpg);   
+}
+.bg-12{
+    background-image: url(../images/Clotricks\ Brochure_page-0012.jpg);   
+}
+.bg-height{
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover; 
+    object-fit: cover;
+    min-height: 1754px;
+}
+
+.pages{
     padding-left: 0 !important;
     padding-right: 0 !important;
 }
@@ -78,5 +123,14 @@ body{
     .about p{
         font-size: 20px;
         
+    }
+    .bg-height{
+        min-height: 1200px;
+    }
+    
+}
+@media (max-width: 767px){
+    .bg-height{
+        min-height: 600px;
     }
 }
