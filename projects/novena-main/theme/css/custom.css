@@ -109,7 +109,7 @@ p{
 }
 .icon-wrapper{
     border-radius: 50%;
-    background-color: #0060b0;
+    background-color: #018FE3;
     width: 48px;
     height: 48px;
     display: flex;
@@ -118,14 +118,14 @@ p{
 }
 
 .callnow .btn{
-    border: 1px solid #0060b0;
+    border: 1px solid #018FE3;
     background-color: #fff;
-    color:#0060b0;
+    color:#018FE3;
 }
 
 .about .btn{
-    border: 1px solid #0060b0;
-    background-color: #0060b0;
+    border: 1px solid #018FE3;
+    background-color: #018FE3;
     color:#fff;
 }
 .testimonial{
@@ -133,7 +133,7 @@ margin-top: 25px;
 }
 .testimonial-2{
     padding: 50px 0  !important;
-    background-color: #0060b0;
+    background-color: #018FE3;
 }
 
 .footer ul li a {
@@ -154,7 +154,7 @@ margin-top: 25px;
 }
 
 .navbar ul li a {
-    color: #0060B0 !important;
+    color: #018FE3 !important;
     font-weight: 800;
 }
 
@@ -164,17 +164,17 @@ margin-top: 25px;
     font-weight: 400;
     color: #555;
     border-bottom: 1px solid #eee;
-    border-bottom: 1px solid #0060B0;
+    border-bottom: 1px solid #018FE3;
 }
 .navigation .dropdown-menu {
     padding: 0px;
     border: 0px;
-    border-top: 5px solid #0060B0;
+    border-top: 5px solid #018FE3;
     background: #fff;
     border-radius: 0px;
 }
 .navbar-collapse{
-    /* background-color: #0060b0;
+    /* background-color: #018FE3;
     z-index: 999; */
 }
 @media (max-width:992px){
@@ -184,7 +184,7 @@ margin-top: 25px;
     }
 }
 .section-title h2 span{
-    color: #0060b0;
+    color: #018FE3;
 }
 .section-title h2{
     color: #000;
@@ -194,30 +194,30 @@ margin-top: 25px;
 .divider {
     width: 80px;
     height: 5px;
-    background: #0060b0 !important;
+    background: #018FE3 !important;
     margin-bottom: 20px;
 }
 .do-wrappers h4{
-    border:2px solid #0060b0;
+    border:2px solid #018FE3;
     text-align: center;
     border-radius: 5px;
-    box-shadow: 1px 1px 1px #0060b0
+    box-shadow: 1px 1px 1px #018FE3
 }
 .about-content h3{
     text-transform: uppercase;
 }
 
 .about-content h3 span{
-    color:#0060b0;
+    color:#018FE3;
 }
 
 
 .callnow{
-    background-color: #0060b0;
+    background-color: #018FE3;
  
 }
 .counter-bg{
-    background-color: #0060b0;
+    background-color: #018FE3;
 }
 
 .client-info {
@@ -227,7 +227,7 @@ margin-top: 25px;
 
 .service-item .btn{
     background-color: white;
-    color:#0060b0
+    color:#018FE3
 }
 
 .aboutus{
@@ -236,6 +236,13 @@ margin-top: 25px;
 
 .logo-med{
     width: 80%;
+    /* background-color: linear; */
+    /* background-image: linear-gradient(145deg, rgba(165, 200, 207, 0.95) 0%, rgba(152, 119, 234, 0.95) 100%); */
+
+}
+
+.logo-med1{
+    width: 50%;
 }
 
 .testimonial-wrap-2 .slick-dots {
@@ -262,9 +269,11 @@ margin-top: 25px;
     background: #91a8ee;
     color: #e12454;
 }
+
+
 .icon-wrapper-pri{
     border-radius: 50%;
-    background-color: #0060b0;
+    background-color: #018FE3;
     width: 48px;
     height: 48px;
     display: flex;
@@ -294,6 +303,22 @@ margin-top: 25px;
   .dropdown{
     /* overflow-y: auto; */
   }
+
+  .close-icon{
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' fill='currentColor' class='bi bi-x-lg' viewBox='0 0 16 16'%3E%3Cpath d='M2.146 2.854a.5.5 0 1 1 .708-.708L8 7.293l5.146-5.147a.5.5 0 0 1 .708.708L8.707 8l5.147 5.146a.5.5 0 0 1-.708.708L8 8.707l-5.146 5.147a.5.5 0 0 1-.708-.708L7.293 8 2.146 2.854Z'/%3E%3C/svg%3E");
+    background-size: 16px;
+    width: 16px;
+    height: 16px;
+    vertical-align: middle;
+    display: inline-block;
+  }
+  
+  [class*=" icofont-"], [class^=icofont-] {
+    font-family: IcoFont!important;
+    speak: none;
+    font-style: normal;
+    font-weight: 1000;}
+
   @media (max-width:992px){
   .logo-pri{
     width: 69%;
@@ -307,7 +332,7 @@ margin-top: 25px;
 
   .testimonial-2 .btn{
     background-color: #fff;
-    color: #0060b0;
+    color: #018FE3;
   }
   .testimonial-2 h5{
     text-transform: uppercase;
@@ -330,28 +355,28 @@ margin-top: 25px;
   }
   .service .btn.btn-two{
       color: #fff;
-      background-color: #0060b0;
-      border: 1px solid #0060b0;
+      background-color: #018FE3;
+      border: 1px solid #018FE3;
     }
     .service .btn{
-    color: #0060b0;
+    color: #018FE3;
    background-color: #fff;
   }
   .icofont-navigation-menu{
-    color: #0060B0;
+    color: #018FE3;
     padding: 10px;
     /* border: 1px solid #fff; */
     border-radius: 5px;
   }
 
 .contact-block i {
-    color:#0060b0;
+    color:#018FE3;
 }
 
 .doctors .btn-group .btn.active {
     box-shadow: none !important;
     border-color: transparent;
-    background: #0060b0;
+    background: #018FE3;
     color: #fff;
 }
 
@@ -375,13 +400,22 @@ p{
   
   .fa:hover {
       opacity: 0.7;
+      color: white;
+  }
+
+  .fa:active{
+    color: white;
+  }
+
+  .fa:focus{
+    color: white;
   }
   
   .fa-facebook {
     background: #3B5998;
     color: white;
   }
-  
+
   .fa-twitter {
     background: #55ACEE;
     color: white;
@@ -403,7 +437,7 @@ p{
   }
   
   .blue-heading{
-    color: #0060B0;
+    color: #018FE3;
   }
 
   .banner p{

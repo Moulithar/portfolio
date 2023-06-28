@@ -225,7 +225,7 @@
   }
 
   // navbar-bg-change
-  
+
   $(window).scroll(function () {
     var scroll = $(window).scrollTop();
 
@@ -244,6 +244,10 @@
     $(this).parent().siblings().removeClass("open");
     $(this).parent().toggleClass("open");
   });
+
+  // $(".navbar-toggler").click(function () {
+  //   $(".icofont-navigation-menu").toggleClass("hidden");
+  // });
 })(jQuery);
 
 // (function ($) {
