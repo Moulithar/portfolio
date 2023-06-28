@@ -1411,7 +1411,7 @@ a:focus {
 
 .backtop {
   position: fixed;
-  background: #223a66;
+  background: #018FE3 !important;
   z-index: 9999;
   display: inline-block;
   right: 55px;
