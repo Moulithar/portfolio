@@ -175,13 +175,17 @@ margin-top: 25px;
 
 .navigation .dropdown-item {
     padding: 13px 20px;
-    /* background: #efeff7; */
     background-color: #fff;
     font-weight: 400;
     color: #555;
-    border-bottom: 1px solid #eee;
+    /* border-bottom: 1px solid #eee; */
     border-bottom: 1px solid #018FE3;
 }
+.navigation li:last-child .dropdown-item {
+    border-bottom: none;
+
+}
+
 .navigation .dropdown-menu {
     padding: 0px;
     border: 0px;
@@ -477,4 +481,13 @@ p{
 
   .doctors .btn-group .btn:hover {
     background-color: #018FE3;
+  }
+
+  @media (max-width: 767px){
+    .navbar{
+        /* height: 60px; */
+    }
+    .logo-pri{
+        width: 50%;
+    }
   }
