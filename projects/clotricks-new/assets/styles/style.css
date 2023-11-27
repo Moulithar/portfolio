@@ -1,0 +1,490 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&family=Ubuntu&display=swap');
+
+body{
+    background: url(../images/Clotricks_digital_Vcard\ bg-01.svg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+h1{
+    position: relative;
+}
+
+/******************
+01.header
+*******************/
+.header{
+    background-color: #fdf6eb;
+    width: 100%;
+    height: 91px;
+    transition: 0.5s all ease;
+    position: fixed;
+    z-index: 1000;
+}
+
+.header-bg{
+    background-color: #fdf6eb;
+    height: 70px;
+}
+
+.header-logo{
+    width: 150px;
+}
+a.nav-link{
+    font-size: 20px;
+    font-weight: 600;
+}
+/****************
+02.banner
+*****************/
+.banner h1{
+    font-size: 100px;
+    text-transform: uppercase;
+    color: #000;
+}
+
+.banner p{
+    font-size: 20px;
+    text-transform: capitalize;
+    color: #000;
+}
+
+.banner-img{
+    width: 10%;
+    height: 5%;
+    object-fit: cover;
+}
+
+.banner{
+
+    padding: 233px 0;
+    background-position: center;
+    /* background: url(../images/banner.jpg); */
+    background-size: cover;
+    /* background: rgba(76, 175, 80, 0.1) */
+    background-image: linear-gradient(rgba(255,255,255,0.5), rgba(255,255,255,0.5)), url(../images/banner.jpg);
+}
+
+/* .banner:before{
+    content: ' ';
+    display: block;
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0.6;
+    background-position: 50% 0;
+    background: url(../images/banner.jpg);
+    background-size: cover;
+
+} */
+
+.banner h1:after{
+    content: "";
+    display: block;
+    width: 300px;
+    height: 8px;
+    background: #000;
+    left: 0;
+    top: 50%;
+    position: absolute;
+}
+
+.banner h1:before {
+    content: "";
+    display: block;
+    width: 300px;
+    height: 8px;
+    background: #000;
+    right: 0;
+    top: 50%;
+    position: absolute;
+}
+
+.banner-content{
+    position:relative;
+}
+
+/*****************
+ 03.product
+******************/
+.product h1{
+    text-transform: capitalize;
+    color:#000;
+    font-weight: 600;
+}
+
+.product h1:after{
+    content: "";
+    display: block;
+    width: 430px;
+    height: 4px;
+    background: #000;
+    left: 0;
+    top: 50%;
+    position: absolute;
+}
+  
+.product h1:before {
+    content: "";
+    display: block;
+    width: 430px;
+    height: 4px;
+    background: #000;
+    right: 0;
+    top: 50%;
+    position: absolute;
+}
+
+/****************
+04.about
+****************/
+.about-logo{
+    width: 100%;
+}
+
+.about .btn-primary{
+    background-color: #8f7538;
+    border: 1px #fdf8eb;
+    color: #fff;
+}
+
+.about h1{
+    text-transform: capitalize;
+    font-weight: 600;
+    color: #000;
+}
+
+.about h1:after{
+    content: "";
+    display: block;
+    width: 180px;
+    height: 4px;
+    background: #000;
+    left: 0;
+    top: 50%;
+    position: absolute;
+}
+  
+.about h1:before {
+    content: "";
+    display: block;
+    width: 180px;
+    height: 4px;
+    background: #000;
+    right: 0;
+    top: 50%;
+    position: absolute;
+}
+
+/********************
+05.maps
+********************/
+
+.maps h1{
+    text-transform: capitalize;
+    font-weight: 600;
+}
+
+.maps h1:after{
+    content: "";
+    display: block;
+    width: 500px;
+    height: 4px;
+    background: #000;
+    left: 0;
+    top: 50%;
+    position: absolute;
+}
+  
+.maps h1:before {
+    content: "";
+    display: block;
+    width: 500px;
+    height: 4px;
+    background: #000;
+    right: 0;
+    top: 50%;
+    position: absolute;
+}
+
+/********************
+06.footer
+********************/
+.content{
+    padding-left: 50px;
+}
+
+.content ul li{
+    padding-bottom: 10px;
+}
+
+.design{
+    max-height: 100px;
+}
+
+.design-img{
+    width: 100%
+}
+
+.footer h4{
+    font-weight: 700;
+}
+
+
+/******************
+06.footer-sec
+*******************/
+.footer-sec{
+    background-color: #d2c29e;
+    padding: 20px 0;
+}
+
+.footer-sec span{
+    font-family: 'Ubuntu', sans-serif;
+    font-weight: 800;
+}
+
+/********************************
+media query for 992px(ipad-view)
+********************************/
+
+@media(max-width:992px){
+    .banner h1{
+        font-size: 80px;
+      }
+}
+
+/********************************
+media query for 767px(mobile-view)
+********************************/
+
+@media(max-width:767px){
+    .banner h1{
+        font-size:50px;
+    }
+    .banner-img{
+        width: 5%;
+        height: 5%;
+        object-fit: cover;
+        display: none;
+    }
+
+    .header-logo{
+        width: 100px;
+    }
+
+    .maps h1:after{
+        width: 130px;
+    }
+      
+    .maps h1:before {
+        width: 130px;
+    }
+
+    .about h1:after{
+        width: 100px; 
+    }
+      
+    .about h1:before {  
+        width: 80px;     
+    }
+    .product h1:after{
+        width: 80px;
+    }
+      
+    .product h1:before {
+        width: 80px;
+       
+}
+.banner h1:after{
+    width: 50px;
+}
+
+.banner h1:before {
+    width: 50px;
+}
+}
+
+/**********************************/
+  
+  /* ul {
+    margin: 0;
+    padding: 0;
+    position: relative;
+    transform: translate(-50%, -50%);
+    left: 200px;
+  }
+  
+  ul li {
+    list-style: none;
+  }
+  
+
+  
+  ul li a::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    background: #ffee10;
+    transition: .5s;
+    transform: scale(.9);
+    z-index: -1;
+  } */
+  .footer{
+    background-color: #393939;
+    color: #fff;
+}
+  ul li a:hover::before {
+    transform: scale(1.1);
+    box-shadow: 0 0 15px #ffee10;
+  }
+  
+  ul li a:hover {
+    color: #ffee10;
+    /* box-shadow: 0 0 5px #ffee10; */
+    text-shadow: 0 0 5px #ffee10;
+  }
+  ul li a {
+    display: block;
+    color: #fff;
+    font-size: 20px;
+    transition: .5s;
+    text-decoration: none;
+  }
+
+  .footer p{
+    font-size: 20px;
+  }
+  .footer p:hover::before {
+    transform: scale(1.1);
+    box-shadow: 0 0 15px #ffee10;
+  }
+  
+  .footer p:hover {
+    color: #ffee10;
+    /* box-shadow: 0 0 5px #ffee10; */
+    text-shadow: 0 0 5px #ffee10;
+  }
+
+  /************************
+  apollo effect
+  **************************/
+
+  /* figure.effect-apollo {
+	background: #3498db;
+}
+
+figure.effect-apollo img {
+	opacity: 0.95;
+	-webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
+	transition: opacity 0.35s, transform 0.35s;
+	-webkit-transform: scale3d(1.05,1.05,1);
+	transform: scale3d(1.05,1.05,1);
+}
+
+figure.effect-apollo figcaption::before {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background: rgba(255,255,255,0.5);
+	content: '';
+	-webkit-transition: -webkit-transform 0.6s;
+	transition: transform 0.6s;
+	-webkit-transform: scale3d(1.9,1.4,1) rotate3d(0,0,1,45deg) translate3d(0,-100%,0);
+	transform: scale3d(1.9,1.4,1) rotate3d(0,0,1,45deg) translate3d(0,-100%,0);
+}
+
+figure.effect-apollo p {
+	position: absolute;
+	right: 0;
+	bottom: 0;
+	margin: 3em;
+	padding: 0 1em;
+	max-width: 150px;
+	border-right: 4px solid #fff;
+	text-align: right;
+	opacity: 0;
+	-webkit-transition: opacity 0.35s;
+	transition: opacity 0.35s;
+}
+
+figure.effect-apollo h2 {
+	text-align: left;
+}
+
+figure.effect-apollo:hover img {
+	opacity: 0.6;
+	-webkit-transform: scale3d(1,1,1);
+	transform: scale3d(1,1,1);
+}
+
+figure.effect-apollo:hover figcaption::before {
+	-webkit-transform: scale3d(1.9,1.4,1) rotate3d(0,0,1,45deg) translate3d(0,100%,0);
+	transform: scale3d(1.9,1.4,1) rotate3d(0,0,1,45deg) translate3d(0,100%,0);
+}
+
+figure.effect-apollo:hover p {
+	opacity: 1;
+	-webkit-transition-delay: 0.1s;
+	transition-delay: 0.1s;
+} */
+
+
+a.nav-link:after {
+  display:block;
+  content: '';
+  border-bottom: solid 3px #000;  
+  transform: scaleX(0);  
+  /* transition: transform 250ms ease-in-out; */
+  transition: 0.3s all ease-in-out;
+}
+a.nav-link:hover:after { transform: scaleX(1); }
+a.nav-link.fromLeft:after{  transform-origin:  0% 50%; }
+
+.gallery {
+    position: relative;
+  }
+  
+  .gallery-img {
+    display: block;
+    width: 100%;
+    height: auto;
+  }
+   
+  .gallery:hover .overlay {
+    transform: scale(1);
+  }
+  
+  .text {
+    color: white;
+    font-size: 20px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+  }
+  
+  /* The overlay effect (full height and width) - lays on top of the container and over the image */
+  .overlay {
+    position: absolute;
+    bottom: 0;
+    left: 12px;
+    right: 0;
+    background-color: #000000;
+    width: 94%;
+    height: 100%;
+    transform: scale(0);
+    transition: .3s ease;
+    opacity: 0.6;
+    padding: 0px 100px;
+  }
+  

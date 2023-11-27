@@ -1,0 +1,176 @@
+body{
+    background: url(../images/Clotricks_digital_Vcard\ bg-01.svg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    font-weight: 600;
+}
+/* side bar icon */
+a {
+    text-decoration: none;
+    vertical-align: middle;
+    line-height: 3;
+  }
+  
+  p {
+    color: white;
+    margin: 0px;
+  }
+  
+  .sidebar {
+    height: auto;
+    width: 0px;
+    position: fixed;
+    text-align: center;
+    top: 80vh;
+    padding: 15px;
+    right: 5vh;
+  }
+  
+  p i {
+    left: 30px;
+    position: relative;
+    vertical-align: middle;
+    text-align: center;
+    font-size: 24px;
+  }
+  
+  .social {
+    /* margin-left: -200px; */
+    width: fit-content;
+    padding: 0;
+    display: inline-table;
+    height: 0px;
+    background-color: #493b29;
+    -moz-transition-property: margin-left;
+    -moz-transition-duration: 0.2s;
+    -moz-transition-delay: 0.2s;
+    -ms-transition-property: margin-left;
+    -ms-transition-duration: 0.2s;
+    -ms-transition-delay: 0.2s;
+    -o-transition-property: margin-left;
+    -o-transition-duration: 0.2s;
+    -o-transition-delay: 0.2s;
+    -webkit-transition-property: margin-left;
+    -webkit-transition-duration: 0.2s;
+    -webkit-transition-delay: 0.2s;
+    box-shadow: 0px 0px 6px 0px #3E3D3D;
+    cursor: pointer;
+    transition: all ease-in-out 0.3s;
+  }
+  
+  .social:hover {
+    /* margin-left: -30px; */
+    /* width: 230px; */
+    background-color: #eda54d;
+  }
+  /* end of sidebar */
+  /* .hovering-element {
+    position: absolute;
+    top: 10%;
+    right: 10%; 
+    background-color: #007bff;
+    color: #ffffff;
+    padding: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  .hovering-icon{
+    position: sticky;
+  }
+
+  .hovering-element:hover {
+    background-color: #eda54d;
+  } */
+
+/* 01.header */
+.banner{
+    padding-top: 50px;
+}
+
+.gold-logo{
+    width: 200px;
+}
+
+.header-logo{
+    width: 400px;
+}
+
+/* 02.design */
+.design-img{
+    width: 100%;
+    height: 450px;
+    object-fit: cover;
+}
+
+.design .container-fluid{
+    padding: 0;
+}
+
+/* 03.footer */
+.pad{
+    margin-left: 65px;
+}
+
+ul li a{
+    text-decoration: none;
+    color: #000;
+    font-size: 30px;
+    text-align: start;
+}
+
+ul li{
+    margin-top: 20px
+}
+
+.footer{
+    margin-top: -15rem;
+    margin-bottom: 4rem;
+ }
+ 
+/* 04.footer-sec */
+
+.footer-bottom{
+    height: 40px;
+    background-color: #493b29;
+    padding: 0;
+}
+
+.btn{
+    background-color: #493b29;
+    margin-bottom: -30px;
+    padding-bottom: 30px;
+    width: 250px;
+    font-size: 20px;
+    text-transform: capitalize;
+}
+
+.btn:hover {
+    background-color: #493b29;
+}
+
+/* media query for mobile devices */
+
+@media(max-width: 767px){
+    
+    .header-logo{
+        width: 300px;
+    }
+
+    .gold-logo{
+        width: 100px;
+    }
+    
+    .design-img{
+        height: 150px !important;
+    }
+    
+    ul li a{
+        font-size: 20px;
+    }
+    .footer{
+        margin-top: 0;
+        margin-bottom: 2rem;
+     }
+    
+}

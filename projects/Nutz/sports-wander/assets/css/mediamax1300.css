@@ -1,0 +1,134 @@
+@media (max-width: 1300px) {
+    .container{
+        max-width: 1200px;
+    }
+
+    .login-list-center li a {
+        margin-right: 30px;
+        font-size: 16px;
+    }
+
+    .login-list li a {
+        font-size: 16px;
+    }
+
+    .org-heading {
+        padding-top: 100px;
+    }  
+
+    .org-white-bg {
+        background-color: #ffffff;
+        width: 66px;
+        height: 66px;
+        border-radius: 50%;
+    }
+
+    .icon-organization {
+        width: 36px;
+        height: 36px;
+    }
+
+    .org-heading h2 {
+        font-size: 38px;
+    }
+    .org-heading span {
+        font-size: 25px;
+    }
+
+    .stadium-heading h2 {
+        font-size: 38px;
+    }
+
+    .stadium-heading span {
+        font-size: 25px;
+    }
+    .org::before { 
+        bottom: -200px;
+    }
+
+    .icon-factory {
+        width: 61px;
+        height: 61px;
+    }
+
+    .banner .card {
+        margin: 10px 0px 10px;
+    }
+    
+    .device h2{
+        font-size:38px;
+    }
+
+    .icon-droid ,.icon-web, .icon-ios{
+        width: 60px;
+        height: 60px;
+    }
+
+    .device h4 {
+        font-size: 20px;
+        padding-top: 26px;
+        margin-bottom: 100px;
+    }
+    .reachus::before {
+        bottom: -226px;
+        left: -197px;
+    }
+
+    .reach-us-white-bg {
+        width: 60px;
+        height: 60px;
+    }
+    .reach-us-list li a span {
+        font-size: 20px;
+    }
+    .reachus h2{
+        font-size:34px;
+    }
+
+    .reach h4 {
+        font-size: 22px;
+    }
+    
+    .icon-msg{
+        width:34px;
+        height:34px;
+    }
+
+    .footer ul li a {
+        font-size: 16px;
+        line-height: 26px;
+    }
+
+    .banner .banner-content h3 span:before {
+        background-size: 120px;
+        height: 51px;
+        width: 120px;
+        right: -56px;
+        bottom: -16px;
+    }
+
+    .customize-card-list-left .one::after {
+        right: -58px;
+        top: 41px;  
+    }
+
+    .customize-card-list-left .two::after {
+        right: -11px;
+        top: 41px;   
+    }
+
+    .customize-card-list-left .three::before {
+        right: 8px;
+        top:41px;
+    }
+
+    .customize-card-list-left .four::before { 
+        right: px;
+        top: 41px;  
+    }
+
+    .footer .footer-banner {
+        padding-top: 60px;
+        padding-bottom: 23px;
+    }
+}

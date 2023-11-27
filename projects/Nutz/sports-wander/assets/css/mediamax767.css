@@ -1,0 +1,400 @@
+/*************************
+phone
+**************************/
+@media (max-width : 767px ) {
+
+    html,body {
+        overflow-x: hidden;
+    }
+
+    /******************
+    1.navbar
+    *******************/
+
+    .offcanvas.offcanvas-sports {
+        width: 100%;
+    }
+
+    /******************
+    2.banner
+    *******************/
+    
+    .banner .banner-content {
+        margin-top: 150px;
+    }
+
+    .banner .banner-content h3 span:before {
+        background-size: 65px;
+        width: 65px;
+        height: 21px;
+        right: -30px;
+    }
+
+    .banner-heading {
+        margin-bottom: 83px;
+    }
+
+    .banner h3 {      
+        font-size: 24px;
+        font-weight: 400;
+        line-height: 36px;
+        padding-bottom: 42px;
+    }
+
+    .banner-heading h1 {
+        font-weight: 500;
+        font-size: 32px;
+        line-height: 48px;
+        letter-spacing: 0px;
+    }
+
+    h1 span {
+        font-weight: 100;
+        font-size: 29.5px;
+        letter-spacing: 0px;
+        line-height: 44px;
+    }
+
+    .banner-button-list li img {
+        width: 150px;
+    }
+
+    .banner .banner-img {
+        margin-top: 60px;
+    }
+
+    .banner .card {
+        padding: 15px 0px 0px;
+    }
+
+    .banner .card h3 {
+        font-size: 25px;
+    }
+
+    .insight{
+        padding-top:100px;
+    }
+
+    .icon-stad { 
+        width: 44px;
+        height: 25px;
+    }
+
+    .icon-smile{
+        width: 30px;
+        height: 30px;
+    }
+
+    .icon-cork{
+        width:30px;
+        height:32px;
+    }
+
+    .icon-play{
+        width:30px;
+        height:32px;
+    }
+
+    .icon-arrow{
+        width:40px;
+        height:40px;
+    }
+
+    .banner .card h4 {
+        font-size: 16px;
+        line-height: 23px;
+    }
+
+    .banner .card h3 {
+        font-size: 26px;
+        line-height: 39px;
+    }
+
+    /******************
+    3.org
+    *******************/
+    .org .card .card-bubble {
+        width: 23px;
+        height: 23px;
+        top: -10px;
+        right: -10px;
+    }
+
+    .org-heading h2{
+        font-size: 24px;
+    }
+
+    .org-heading span{
+        font-size: 14px;
+        font-weight: 400;
+        letter-spacing: 0.0025em;
+        padding-bottom: 35px;
+    }
+
+    .org .card {
+        padding: 0 0 20px 22px;
+        height: 170px;
+        margin:  30px 30px;
+    }
+
+    .org .card1 {
+        margin-top: 36px;
+    }
+    
+    .org .card .card-bubble {
+        width: 70px;
+        height: 70px;
+        top: -10px;
+        right: -10px;
+    }
+
+    .org .card .card-text h3 {
+        font-size: 24px; 
+        padding-bottom: 1px;
+    }
+
+    .org .card .card-text h4 {
+        font-size: 15px;
+    }
+
+    .org-heading{
+        padding-top: 147px; 
+        color:#FFFFFF;
+    }
+
+    .org::before {  
+        left: -10px;
+        bottom:-150px;
+    }
+
+    .org::after {
+        right: -10px;    
+    }
+
+    .org-white-bg, .reach-us-white-bg {
+        width: 37px;
+        height: 37px;
+    }
+    .number-white-bg{
+        width:46px;
+        height: 46px;
+    }
+    .icon-organization {
+        width:21px;
+        height:21px;
+    }
+
+    .icon-calendar {
+        width:25px;
+        height:25px;
+    }
+    
+    .icon-ticket {
+        width:25px;
+        height:23px;
+    }
+    
+    .icon-event {
+        width:25px;
+        height:23px;
+    }
+    
+    .icon-support {
+        width:28px;
+        height:28px;
+    }
+
+     /******************
+    4.stadium
+    *******************/
+    .stadium{
+        padding: 150px 0px 90px 0;
+        /* font-size: 40px; */
+        font-weight: 600;
+    }
+
+    .customize-card-list-left .one::after,
+    .customize-card-list-left .two::after,
+    .customize-card-list-right .three::before,
+    .customize-card-list-right .four::before {
+        width: 100%;
+    }
+
+    .customize-card-list-left li:not(:last-child) {
+        padding-right: 55px;
+    }
+
+    .customize-card-list-right li:not(:last-child) {
+        margin-right: 0;
+        padding: 0 70px;
+    }
+
+    .customize-card-list-left .one::after {
+        right: -44px;
+        top: 22px;  
+    }
+
+    .customize-card-list-left .two::after {
+        right: -10px;
+        top: 22px;   
+    }
+
+    .icon-no-one{
+        width:30px;
+        height:24px;
+        background-size: 30px;
+    }
+
+    .icon-no-two{
+        width:34px;
+        height:22px;
+        background-size: 34px;
+    }
+
+    .customize-card-list-right .three::before {
+        right: 27px;
+        top:22px;
+    }
+    .customize-card-list-right .four::before { 
+        right: 87px;
+        top: 22px;  
+    }
+
+    .icon-no-three{
+        width:36px;
+        height:25px;
+        background-size: 36px;
+    }
+
+    .icon-no-four{
+        width:31px;
+        height:25px;
+        background-size: 31px;
+    }
+
+    .stadium p{
+        font-size:14px;
+    }
+
+    .stadium-heading{
+        padding: 0px 0px 50px 0px;
+        color:#FFFFFF;
+    }
+
+    .stadium-heading h2{
+        font-size: 24px;
+        line-height: 0px;
+        margin-top: 28px;
+    }
+
+    .stadium p{
+        padding-top:20px;
+    }
+
+    .stadium-heading span{
+        font-size: 14px;
+    }
+
+    .icon-factory {
+        width: 40px;
+        height: 40px;
+    }
+    
+    .stadium-white-bg {
+        width: 47px;
+        height: 46px;
+    }
+    
+    /******************
+    5.devices
+    *******************/
+    .device h2 {
+        font-size: 16px;
+        padding-top: 0px;
+        padding-bottom:0px;
+    }
+
+    .device h4{
+        font-size: 13px;
+        font-weight: 500;
+        padding-top: 14px;
+        margin-bottom: 68px;
+    }
+
+    .icon-droid{
+        width:34px;
+        height:41px;
+    }
+    
+    .icon-ios{
+        width:30px;
+        height:41px;
+    }
+    
+    .icon-web{
+        width:47px;
+        height:41px;
+    }
+
+    /******************
+    6.reach us
+    *******************/
+    .reachus::before {
+        width: 200px;
+        height: 200px;
+        bottom: auto;
+        left: -76px;
+        top: -87px;
+    }
+
+    .reach h4{
+        padding-top: 7px;
+    }
+
+    .reach-us-list li a span {
+        font-size: 14px;
+    }
+
+    .reach-us-list li .icon-phone {
+        background-size: 12px;
+        width: 12px;
+        height: 12px;
+    }
+
+    .reach-us-list li .icon-mail {
+        background-size: 14px;
+        width: 14px;
+        height: 12px;
+    }
+
+    .icon-msg {
+        width: 21px;
+        height: 19px;
+    }
+
+    .reach-us-white-bg{
+        margin-left:0px;
+    }
+
+    /******************
+    7.footer
+    *******************/
+    .copyright-wrapper {
+        display:flex;
+        justify-content: center;
+    }
+
+    .footer .copyright:after {
+        display:none;
+    }
+
+    .footer .copyright span p {
+        top:35px;
+        right:57px;
+        color: #21212180 ;
+        font-size: 14px;
+        font-weight: 400;
+        text-align: right;
+    }
+}
+   

@@ -1,0 +1,22 @@
+@media (max-width: 1710px) {
+    .container{
+        max-width: 1600px;
+    }
+    .login-list-center li a {
+        margin-right: 50px;
+    }
+
+    .reach-us-list li:not(:last-child) {
+        margin-right: 50px;
+    }
+
+    .reach-us-list li a span {
+        font-size: 30px;
+    }
+
+    .container {
+        max-width: 1500px;
+    }
+}
+
+    

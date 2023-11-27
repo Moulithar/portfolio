@@ -1,0 +1,480 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sports-wander</title>
+    <link rel="stylesheet" href="./assets/css/global.css" class="rel">
+</head>
+<body>
+
+    <!----1.header----->
+    <section class="header d-flex align-items-center fixed-top d-md-flex d-none">
+        <div class="container">
+            <nav class="navbar navbar-expand-lg">
+                  <a class="navbar-brand" href="index.html">
+                    <img src="./assets/images/logo.svg" class="logo" />
+                  </a>
+                  <div class="ms-auto d-xl-none d-lg-none">
+                    <a href="#!" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight"><i class="icon icon-burger-dark"></i></a>
+                  </div>
+                  <div class="collapse navbar-collapse" id="navbarNav">                  
+                    <ul class="navbar-nav mx-auto  login-list-center">
+                        <li class="nav-item list-inline">
+                            <a class="">book rest events</a>
+                            <a class="">book venue</a>
+                            <a class="">book stadium events</a>
+                        </li>
+                    </ul>
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <div class="d-flex align-items-center">
+                                <div class="login-bg d-flex align-items-center justify-content-center">
+                                    <i class="icon icon-login"></i>
+                                </div>
+                                <ul class="list-inline login-list">
+                                    <li class="list-inline-item">
+                                        <a class="">login</a>
+                                    </li>
+                                    <li class="list-inline-item">
+                                        <a class="">signup</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </li>
+                    </ul>
+                  </div>
+            </nav>
+        </div>
+    </section>
+
+    <!-- Offcanvas menu -->
+    <div class="offcanvas offcanvas-end offcanvas-sports" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
+        <div class="offcanvas-header">
+          <h5 class="offcanvas-title" id="offcanvasRightLabel">
+            <img src="./assets/images/logo.svg" class="logo" />
+          </h5>
+          <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        </div>
+        <div class="offcanvas-body">
+            <ul class="list-unstyled offcanvas-sports-menu-list">
+                <li>
+                    <a href="#!">Book Events</a>
+                </li>
+                <li>
+                    <a href="#!">Book Venues</a>
+                </li>
+                <li>
+                    <a href="#!">Book Stadium Seats</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- ---2.banner--
+    <section class="banner">
+        <div class="d-md-none sports-burger-menu">
+            <a href="#!" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight"><i class="icon icon-burger-white"></i></a>
+        </div>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6 banner-content">
+                    <h3>Enabling people to <span>book</span></h3>
+                        <div class="banner-heading">
+                            <h1>Sport Events, Venues</h1>
+                            <h1> <span>& Explore</span>
+                             Sports Ecosystem</h1>
+                        </div>
+                        <div class="banner-button-list">
+                            <ul class="list-inline d-flex justify-content-md-start justify-content-between">
+                                <li class="list-inline-item">
+                                    <a class="" href="https://play.google.com/store/apps"> 
+                                        <img src="./assets/images/banner-playstore.svg" class="banner-button"  />
+                                    </a>                                      
+                                </li>
+                                <li class="list-inline-item">
+                                    <a class="" href="https://www.apple.com/in/store"> 
+                                        <img src="./assets/images/banner-appstore.svg" class="banner-button"  />
+                                    </a>                                     
+                                </li>
+                            </ul>
+                        </div> 
+                </div>
+                <div class="col-lg-6">
+                    <img src="./assets/images/banner-phone.svg" class="banner-img img-fluid" />
+                    <div class="shadow">
+                        <p>&nbsp;</p>
+                    </div>
+                </div>
+            </div> 
+            <div class="row d-flex align-items-center">
+                <div class="col-lg-4 col-12 order-lg-1 order-2">
+                    <div class="row">
+                        <div class="col-lg-6 col-6"> 
+                            <div class="card text-center">
+                                <i class="icon icon-stad"></i>
+                                <h3>798k+</h3>
+                                <h4>venues</h4>
+                            </div>
+                        </div>
+                        <div class="col-lg-6 col-6"> 
+                            <div class="card text-center">
+                                <i class="icon icon-smile"></i>
+                                <h3>798k+</h3>
+                                <h4>users</h4>
+                            </div>
+                        </div>
+                        <div class="col-lg-6 col-6"> 
+                            <div class="card text-center">
+                                <i class="icon icon-cork"></i>
+                                <h3>798k+</h3>
+                                <h4>events</h4>
+                            </div>
+                        </div>
+                        <div class="col-lg-6 col-6"> 
+                            <div class="card text-center">
+                                <i class="icon icon-play"></i> 
+                                <div class="card-text">
+                                    <h3>200+</h3>
+                                    <h4>sports</h4>                             
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 order-lg-2 order-1">
+                    <div class="insight text-center">
+                        <i class="icon icon-arrow"></i>
+                        <h3>important insights</h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>   -->
+
+    <!--3.for-organizers-->
+    <section classs="for-organizers">
+        <div class="org">
+            <div class="container">  
+                <div class="row">
+                    <div class="col-12">
+                        <div class="d-flex align-items-center gap-lg-5 gap-2 org-heading">
+                            <div class="org-white-bg d-flex align-items-center justify-content-center">
+                                <i class="icon icon-organization"></i>
+                            </div>
+                            <div>
+                                <h2>For Organizers</h2>
+                                <span> Five  Stages of Events</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="row">
+                    <div class="col-lg-3 col-md-2 col-1"> </div>
+                    <div class="col-lg-3 col-md-2 col-1"> </div>
+                    <div class="col-lg-3 col-md-2 col-1"> </div>                       
+                    <div class="col-lg-3 col-md-6 col-9">
+                        <div class="card card-one">
+                            <div class="card-bubble d-flex align-items-center justify-content-center">
+                                <i class="icon icon-support"></i>
+                            </div>
+                            <div class="card-text">
+                                <h3>04</h3>
+                                <div class="">
+                                    <h4>24*7 customer</h4>
+                                    <h4> support</h4>
+                                </div>                                       
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-lg-3 col-md-2 col-1"> </div>
+                    <div class="col-lg-3 col-md-2 col-1"> </div>
+                    <div class="col-lg-3 col-md-6 col-9">
+                        <div class="card">
+                            <div class="card-bubble d-flex align-items-center justify-content-center">
+                                <i class="icon icon-event"></i>
+                            </div>
+                            <div class="card-text">
+                                <h3>03</h3>
+                                <h4>event promortion</h4>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-2 col-1"></div>
+                </div>
+
+                <div class="row">
+                    <div class="col-lg-3 col-md-2 col-1"></div>
+                    <div class="col-lg-3 col-md-6 col-9">
+                        <div class="card">
+                            <div class="card-bubble d-flex align-items-center justify-content-center">
+                                <i class="icon icon-ticket"></i>
+                            </div>
+                            <div class="card-text">
+                                <h3>02</h3>
+                                <h4>manage tickets</h4>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-2 col-1"></div>
+                    <div class="col-lg-3 col-md-2 col-1"></div>
+                </div>
+
+                <div class="row">
+                    <div class="col-lg-3 col-md-6 col-9">
+                        <div class="card">
+                            <div class="card-bubble d-flex align-items-center justify-content-center">
+                                <i class="icon icon-calendar"></i>
+                            </div>
+                            <div class="card-text">
+                                <h3>01</h3>
+                                <h4>create event</h4>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-2 col-1"></div>
+                    <div class="col-lg-3 col-md-2 col-1"></div>
+                    <div class="col-lg-3 col-md-2 col-1"></div>
+                </div>
+
+            </div>
+        </div>
+    </section> 
+
+    <!-----4.for-stadium----->
+    <!-- <section class="for-stadium">
+        <div class="stadium "> 
+            <div class="container">
+                <div class="row">
+                    <div class="col-12">
+                        <div class="d-flex align-items-center gap-lg-5 gap-2 stadium-heading justify-content-md-end ps-3">
+                            <div class="org-white-bg d-flex align-items-center justify-content-center">
+                                <i class="icon icon-organization"></i>
+                            </div>
+                            <div>
+                                <h2>For Stadium owners</h2>
+                                <span> about venues</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-12">
+                        <ul class="list-inline customize-card-list-left text-xl-center text-end ">
+                            <li class="list-inline-item">
+                                <div class="text-center one">
+                                    <i class="icon icon-one"></i>
+                                    <p class="text-start">customise size</p>
+                                </div>   
+                            </li>
+                            <li class="list-inline-item">
+                                <div class="text-center two">
+                                    <i class="icon icon-two"></i>
+                                    <p class="text-start">manage booking</p>
+                                </div>
+                            </li>
+                            <li class="list-inline-item d-xl-inline-block d-none">
+                                <div class="text-center three">
+                                    <i class="icon icon-three"></i>
+                                    <p class="text-start">individual application</p>
+                                </div>   
+                            </li>
+                            <li class="list-inline-item d-xl-inline-block d-none">
+                                <div class="text-center four">
+                                    <i class="icon icon-four"></i>
+                                    <p class="text-start">24*7 customer support</p>
+                                </div>
+                            </li>
+                        </ul>
+                        <ul class="list-inline customize-card-list-right text-xl-center text-start d-xl-none">
+                            <li class="list-inline-item">
+                                <div class="text-center three">
+                                    <i class="icon icon-three"></i>
+                                    <p class="text-start pt-5">individual application</p>
+                                </div>   
+                            </li>
+                            <li class="list-inline-item">
+                                <div class="text-center four">
+                                    <i class="icon icon-four"></i>
+                                    <p class="text-start pt-5">24*7 customer support</p>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>     
+        </div>
+    </section> -->
+
+    <!-- ---5.devices------
+    <section class="">
+        <div class="device">     
+            <div class="container">
+                <h2>available on all your devices</h2>
+                <div class="d-flex align-items-center justify-content-evenly   text-center ">
+                    <div class="">
+                        <i class="icon icon-droid"></i>
+                        <h4>Android</h4>
+                    </div>
+                    <div class="">
+                        <i class="icon icon-ios"></i>
+                        <h4>IOS</h4>
+                    </div>
+                    <div class="">      
+                        <i class="icon icon-web"></i>   
+                        <h4>web</h4>
+                    </div> 
+                </div>
+            </div>
+        </div>
+    </section> -->
+        
+    <!-----6.reach us---->
+    <!-- <section class="reachus">
+        <div class="reach">
+            <div class="container">
+                <div class="row d-flex align-items-center">
+                    <div class="col-lg-5">
+                        <div class="reach-us-white-bg d-flex align-items-center justify-content-center">
+                            <div class="msg">
+                                <i class="icon icon-msg"></i>
+                            </div>
+                        </div>
+                        
+                        <h2>reach us</h2>
+                        <h4>via mobile,email</h4> 
+                        <h4>Feel free to contact us, we are happy to help you for sure.</h4>
+                    </div>
+                    <div class="col-lg-7">
+                        <ul class="list-inline reach-us-list">
+                            <li class="list-inline-item">
+                                <a href="tel:+91 8248933466" class="d-flex align-items-center">
+                                    <i class="icon icon-phone"></i>
+                                    <span>+91 96987 39898</span>
+                                </a>
+                            </li>
+                            <li class="list-inline-item">
+                                <a href="mailto: admin@sportswander.com" class="d-flex align-items-center">
+                                    <i class="icon icon-mail"></i>
+                                    <span>admin@sportswander.com</span>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section> -->
+
+    <!------7.footer----->
+    <section class="footer">
+    <div class="footer-banner">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4 col-12 ">
+                    <div class="copyright-wrapper">
+                        <div class="copyright">
+                            <a class=""  href="index.html">
+                                <img src="./assets/images/logo.svg" class="footer-logo" />
+                            </a> 
+                            <p>Copyright@2023</p>
+
+                            <div class="footer-icons">
+                                <div class="row">                          
+                                    <div class="col-lg-6 col-sm-6">
+                                        <p>install now</p>
+                                        <div class="d-flex gap-3 align-items-center justify-content-start">
+                                            <a class="" href="" ><i class="icon icon-app"></i></a>
+                                            <a class="" href="" ><i class="icon icon-apple"></i></a>                                 
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-6 col-sm-6">
+                                        <p>follow us on</p>
+                                        <div class="d-flex gap-3 align-items-center justify-content-start ">
+                                            <a class="" href="" ><i class="icon icon-fb"></i></a>
+                                            <a class="" href="" ><i class="icon icon-ig"></i></a>
+                                            <a class="" href="" ><i class="icon icon-ln"></i></a>
+                                            <a class="" href="" ><i class="icon icon-tw"></i></a>
+                                        </div>
+                                    </div>                      
+                                </div>     
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-8">
+                    <div class="row">
+                        <div class="col-lg-3 col-sm-6">
+                            <h4>our products</h4>
+                            <ul>
+                                <li>
+                                    <a class="" href="" >nut commerz</a>
+                                </li>
+                                <li>
+                                    <a class="" href="" >meshkit</a>
+                                </li>
+                                <li>
+                                    <a class="" href="" >c-lk.in</a>
+                                </li>
+                            </ul>
+                        </div> 
+                        <div class="col-lg-3 col-sm-6">
+                            <h4>company</h4>
+                            <ul>
+                                <li>
+                                    <a class="" href="" >about</a>
+                                </li>
+                                <li>
+                                    <a class="" href="" >faq</a>
+                                </li>
+                                <li>
+                                    <a class="" href="" >contact-support</a>
+                                </li>
+                            </ul>
+                        </div> 
+                        <div class="col-lg-3 col-sm-6">
+                            <h4>learn more</h4>
+                            <ul>
+                                <li>
+                                    <a class="" href="" >pricing</a>
+                                </li>
+                                <li>
+                                    <a class="" href="" >terms & conditions</a>
+                                </li>
+                                <li>
+                                    <a class="" href="" >developer API</a>
+                                </li>
+                            </ul>
+                        </div> 
+                        <div class="col-lg-3 col-sm-6">
+                            <h4>policies</h4>
+                            <ul>
+                                <li>
+                                    <a class="" href="" >delivery poloicy</a>
+                                </li>
+                                <li>
+                                    <a class="" href="" >cancellation policy</a>
+                                </li>
+                                <li>
+                                    <a class="" href="" >privacy policy</a>
+                                </li>
+                            </ul>
+                        </div> 
+                    </div>                         
+                </div>                           
+            </div>
+        </div>
+    </div>  
+    </section>
+
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.7/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.min.js"></script>
+</body>
+</html>

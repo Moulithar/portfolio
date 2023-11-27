@@ -1,0 +1,79 @@
+@media (max-width: 1500px) {
+    .container{
+        max-width:1300px;
+    }
+
+    .login-list-center li a {
+        margin-right: 50px;
+    }
+
+    .banner-heading h1 {
+        font-size:36px;
+        line-height: 50px;
+    }
+    
+    h1 span{
+        font-size: 26px;
+    }
+
+    .org .card {
+        margin: -60px 0;
+    }
+
+    .org .card1{
+        margin-top: 0px;
+    }
+
+    .customize-card-list-left li:not(:last-child) {
+        padding-right: 70px;
+    }
+
+    .footer .copyright:after {
+        right: -70px;
+    }
+
+    .banner .card {
+        padding: 20px 10px 10px;
+    }
+
+    .banner .card h3 {
+        font-size: 24px;
+        line-height: 30px;
+        padding: 10px 0;
+        margin-bottom: 0;
+    }
+    
+    .banner .card h4 {
+        font-size: 20px;
+        line-height: 30px;
+    }
+    
+    .customize-card-list-left li:not(:last-child) {
+        padding-right: 100px;
+    }
+
+    .customize-card-list-right li:not(:last-child) {
+        margin-right: 0;
+        padding: 0 141px;
+    }
+
+    .customize-card-list-left .one::after {
+        right: -58px;
+        top: 41px;  
+    }
+
+    .customize-card-list-left .two::after {
+        right: -11px;
+        top: 41px;   
+    }
+
+    .customize-card-list-leftt .three::before {
+        right: 3px;
+        top:41px;
+    }
+
+    .customize-card-list-left .four::before { 
+        right: 147px;
+        top: 41px;  
+    }
+}

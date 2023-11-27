@@ -1,0 +1,967 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <base href="" />
+    <meta charset="utf-8" />
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="description" content="" />
+    <title></title>
+  </head>
+  <body>
+    <base href="" /><meta charset="utf-8" /><meta
+      http-equiv="Content-Type"
+      content="text/html; charset=utf-8"
+    /><meta name="description" content="" />
+    <base href="http://go.pardot.com" /><meta charset="utf-8" /><meta
+      name="description"
+      content=""
+    /><meta name="viewport" content="width=device-width,initial-scale=1.0" />
+    <title></title>
+    <link
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <style type="text/css">
+      /* --------------------------------------------------------------
+                  FORM STYLES
+              ----------------------------------------------------------------- */
+
+                  /* Border-box box model FTW! */
+                  #pardot-form,
+                  #pardot-form *,
+                  #pardot-form *:before,
+                  #pardot-form *:after {
+                      -webkit-box-sizing: border-box;
+                      -moz-box-sizing: border-box;
+                      box-sizing: border-box;
+                  }
+
+                  /* Override form margin and padding set in the default stylesheet. Inherit font and color from page. */
+                  #pardot-form {
+                      margin: 0;
+                      padding: 0;
+                      font: font-family: inter, segoe ui, sans-serif;
+                      color: inherit;
+                  }
+
+                  /* Override form field wrapper margin and padding set in the default stylesheet. */
+                  #pardot-form .form-field,
+                  #pardot-form .submit {
+                      margin: 15px 0 15px 0;
+                      padding: 0;
+                  }
+
+                  /* Remove top margin from first from field wrapper. */
+                  #pardot-form .form-field:first-child {
+                      margin-top:0;
+                  }
+
+                  /* Set default input style. */
+                  #pardot-form input {
+                      border: 1px solid #ccc;
+                      border-radius: 3px;
+                      box-sizing: border-box;
+                      color: #2c3e50;
+                      font-size: 14px;
+                      padding: 7px 15px;
+                      width: 100%;
+                  }
+
+                  /* When labels are not floated left, set width on text inputs, textareas, and selects to 100%. */
+                  #pardot-form input.text,
+                  #pardot-form input.date,
+                  #pardot-form textarea,
+                  #pardot-form select {
+                      width: 100%;
+                      font-family: inter, segoe ui, sans-serif;
+                      color: inherit;
+                  }
+
+                  /* When labels are floated left, set width on field labels to a percentage of available width. In browsers that support calc(), use static label width instead and the form field will consume the remaining width. */
+                  #pardot-form.label-left .field-label {
+                      width: 35%;
+                      width: calc(115px);
+                  }
+
+                  /* When labels are floated left, set width on text inputs, textareas, and selects to a percentage. In supported browsers, set width to 100% minus the width of the label instead. */
+                  #pardot-form.label-left input.text,
+                  #pardot-form.label-left input.date,
+                  #pardot-form.label-left textarea,
+                  #pardot-form.label-left select {
+                      width: 65%;
+                      width: calc(100% - 115px);
+                  }
+
+                  /* When labels are floated left, indent supporting form elements by the same amount as the field label. */
+                  #pardot-form.label-left span.value,
+                  #pardot-form.label-left .description,
+                  #pardot-form.label-left .no-label > *,
+                  #pardot-form.label-left .submit,
+                  #pardot-form.label-left .error.no-label {
+                      margin-left: 35%;
+                      margin-left: calc(115px);
+                  }
+
+                  /* Remove unnecessary left padding on required radio/checkbox field labels when label alignment is set to above and the required symbol is set to default in form styling options. */
+                  #pardot-form label.inline {
+                      padding-left: 0;
+                  }
+
+                  /* Backup styles in case padding is added to text inputs. */
+                  #pardot-form input.date {
+                      padding-left: 20px;
+                      background-position: left center;
+                  }
+
+                  #pardot-form .submit input {
+                      background-color: #337ab7;
+                      color: #fff;
+                  }
+
+              /* --------------------------------------------------------------
+                  BASE
+              ----------------------------------------------------------------- */
+
+                  /* Set the base font */
+                  body {
+                      color: #444;
+                      font-family: inter, segoe ui, sans-serif;
+                      line-height: 27px;
+                      font-size: 15px;
+                  }
+
+                  /* Set heading fonts */
+                  h1 { font-size:60px; }
+                  h2 {  }
+                  h3 { font-size:20px; }
+                  h4 {  }
+
+                  /* Set default background colour */
+                  .bgcolour {
+                      background-color: #eee;
+                  }
+                  /* Set custom background colours for specific blocks, also update font colours if dark BG  */
+                  .header.bgcolour { /* background-color: #eee; */ }
+                  .footer.bgcolour { /* background-color: #eee; */ }
+                  .block-one.bgcolour { background-color: #134380; color: #fff; }
+                  .block-two.bgcolour { background-color: #fafafa; }
+
+              /* --------------------------------------------------------------
+                  TEMPLATE DETAILS
+              ----------------------------------------------------------------- */
+
+                  /* Remove bottom space & adjust font */
+                  .cta p {
+                      margin-bottom: 0;
+                      font-size: 21px;
+                      font-weight: 200;
+                  }
+
+                  /* Remove bottom space */
+                  footer p{
+                      margin-bottom: 0;
+                  }
+
+                  /* Set dynamic width to images in block two */
+                  .block-two .thumbnail img {
+                      max-width: 100%;
+                      max-height: 100%;
+                  }
+
+                  /* Enable strong control over editable table cell widths */
+                  table.editable-table {
+                      table-layout: fixed;
+                      width: 100%;
+                  }
+
+                  /* Set default editable table cell spacing & widths */
+                  table.editable-table.3col td {
+                      padding:0px 15px;
+                      width:33%;
+                  }
+                  table.editable-table.2col td {
+                      padding:0px 15px;
+                      width:50%;
+                  }
+
+                  /* Grey BG */
+                  .grey{
+                      background-color:#eee;
+                  }
+
+                  /* Images do not extend containers */
+                  img{
+                      max-width: 100%;
+                  }
+                  table img{
+                      width:100%;
+                      max-width: 150px !important;
+                  }
+
+              /* --------------------------------------------------------------
+                  SPACING
+              ----------------------------------------------------------------- */
+
+                  /* make element edge to edge */
+                  .flush {
+                      padding-left: 0;
+                      padding-right: 0;
+                  }
+
+                  /* vertical padding */
+                  .vpadding {
+                      padding-top: 20px;
+                      padding-bottom: 20px;
+                  }
+
+                  /* top padding only */
+                  .tpadding {
+                      padding-top: 20px;
+                      padding-bottom: 0px;
+                  }
+
+                  /* side padding only */
+                  .hpadding {
+                      padding-left: 15px;
+                      padding-right: 15px;
+                  }
+
+                  /* bottom padding only */
+                  .bpadding {
+                      padding-top:0px;
+                      padding-bottom:20px;
+                      line-height: 15px;
+
+                  }
+
+                  /* large vertical padding */
+                  .vpaddingLG {
+                      padding-top:50px;
+                      padding-bottom:50px;
+                  }
+
+                  /* vertical padding double */
+                  .vpadding-double{
+                      padding-top:10px;
+                      padding-bottom:10px;
+                  }
+
+                  /* vertical alignment */
+                  .vcenter {
+                      display: inline-block;
+                      vertical-align: middle;
+                      float: none;
+                  }
+
+                  /* space below headings */
+                  h1, h2, h3, h4, h5, h6 {
+                      margin-bottom:15px;
+                  }
+
+                  /* space below paragraph */
+                  p {
+                      margin-bottom:20px;
+                  }
+
+
+              /* --------------------------------------------------------------
+                  SOCIAL
+              ----------------------------------------------------------------- */
+
+                  /* Social container spacing */
+                  .social {
+                      line-height: 20px;
+                  }
+
+                      /* Make everything within social display next to one another */
+                      .social * {
+                          display:inline;
+                          line-height: 20px;
+                      }
+
+                  /* Social list spacing */
+                  .social-list {
+                      padding-left:10px;
+                      margin:0px;
+                  }
+
+                      /* Social list display next to one another */
+                      .social-list li, .social-list{
+                          display:inline;
+                      }
+
+                      /* Disable underlines on image link hover */
+                      .social-list a:hover{
+                          text-decoration: none;
+                      }
+
+                  /* Share button image specific style */
+                  #share-buttons img {
+                      width: 20px;
+                      border: 0;
+                      box-shadow: 0;
+                      display: inline;
+                  }
+      .cbox{
+                          width: 10% !important;
+                          /* margin-top: -10px !important; */
+                      }
+                      .my-label{
+                          width: 80% !important;
+                          margin-left: 20px;
+                          margin-top: 8px;
+                      }
+
+                    .blue-btn{
+                      background-color: #337ab7;
+                      color: #fff;
+                      border-radius: 3px;
+                      text-align: left;
+                    }
+
+                    .blue-btn input{
+                      background-color: #337ab7;
+                      color: #fff !important;
+                      border: 1px solid #337ab7 !important;
+                      /* color: #2c3e50; */
+                      font-size: 14px;
+                    }
+
+                  @media (max-width: 992px){
+                      .cbox{
+                          width: 10% !important;
+                          margin-bottom: 20px;
+                      }
+                      .my-label{
+                          width: 80% !important;
+                      }
+                      .c-box{
+                      display: block;
+                  }
+
+                    }
+      .cbox2{
+                          width: 10% !important;
+                          /* margin-top: -10px !important; */
+                      }
+                      .my-label{
+                          width: 80% !important;
+                          margin-left: 20px;
+                          margin-top: 8px;
+                      }
+
+                  @media (max-width: 992px){
+                      .cbox{
+                          width: 10% !important;
+                      }
+                      .my-label{
+                          width: 80% !important;
+                      }
+                      .c-box{
+                      display: block;
+                  }}
+
+              /* --------------------------------------------------------------
+                  RESPONSIVE
+              ----------------------------------------------------------------- */
+                  /* xs */
+                  @media(max-width:1000px){
+                      .logo{
+                          text-align: center;
+                          padding-bottom:0;
+                      }
+                      .pull-right{
+                          float: none !important;
+                          text-align: center;
+                      }
+                      .vpadding-double{
+                          padding-top:0px;
+                          padding-bottom:0px;
+                      }
+                      .social{
+                          text-align: center;
+                      }
+                      .vcenter{
+                          width:100%;
+                          text-align: center;
+                      }
+                      .edit-image{
+                          width:290px;
+                          padding-bottom: 5px;
+                      }
+                  }
+                  /* sm */
+                  @media (max-width:978px){
+                      #pardot-form.label-left .field-label {
+                          width: 100%;
+                          text-align: left;
+                      }
+                      #pardot-form.label-left input.text, #pardot-form.label-left input.date, #pardot-form.label-left textarea, #pardot-form.label-left select {
+                          width: 100%;
+                      }
+                      #pardot-form.label-left span.value,
+                      #pardot-form.label-left .description,
+                      #pardot-form.label-left .no-label > *,
+                      #pardot-form.label-left .submit,
+                      #pardot-form.label-left .error.no-label {
+                          width: 100%;
+                      }
+                      #pardot-form.label-left span.value, #pardot-form.label-left .description, #pardot-form.label-left .no-label > *, #pardot-form.label-left .submit, #pardot-form.label-left .error.no-label {
+                          margin-left: 0;
+                      }
+                      form.form p {
+                          margin-left: 0px !important;
+                          padding-left:0px !important;
+                      }
+                      table.editable-table td {
+                          display: block;
+                          width: 100% !important;
+                      }
+                  }
+                  /* md */
+                  @media(max-width:992px){
+
+                  }
+                  /* lg */
+                  @media(min-width:1200px){
+
+                  }
+    </style>
+    <script
+      type="text/javascript"
+      src="https://marketing.climateimpactx.com/js/piUtils.js?ver=2021-09-20"
+    ></script>
+
+    <script type="text/javascript">
+      piAId = "973473";
+      piCId = "40360";
+      piHostname = "pi.pardot.com";
+
+      (function () {
+        function async_load() {
+          var s = document.createElement("script");
+          s.type = "text/javascript";
+          s.src =
+            ("https:" == document.location.protocol
+              ? "https://pi"
+              : "http://cdn") + ".pardot.com/pd.js";
+          var c = document.getElementsByTagName("script")[0];
+          c.parentNode.insertBefore(s, c);
+        }
+        if (window.attachEvent) {
+          window.attachEvent("onload", async_load);
+        } else {
+          window.addEventListener("load", async_load, false);
+        }
+      })();
+    </script>
+
+    <link
+      href="https://marketing.climateimpactx.com/css/form.css?ver=2021-09-20"
+      rel="stylesheet"
+      type="text/css"
+    /><!-- Main jumbotron for a primary marketing message or call to action -->
+    <div class="header bgcolour">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-3 col-sm-6 logo vpadding vcenter">
+            <div class="editable">
+              <a href="https://www.climateimpactx.com"
+                ><img
+                  alt="logo"
+                  pardot-region="logo"
+                  pardot-region-type="image"
+                  placehold="logo"
+                  src="https://uploads-ssl.webflow.com/6230bcdb48cea9dee3e38a3b/6230bcdb48cea9d0e6e38a6a_logo-black.svg"
+                  width="200"
+              /></a>
+            </div>
+          </div>
+          <!--
+              -->
+
+          <div class="col-md-9 col-sm-6 clearfix vpadding vcenter">
+            <div class="cta pull-right text-center">
+              <div class="editable">
+                <p pardot-region="secondary_cta">&nbsp;</p>
+              </div>
+              <!-- editable -->
+            </div>
+            <!-- cta -->
+          </div>
+          <!-- col-md-9 -->
+        </div>
+        <!-- row -->
+      </div>
+      <!-- container -->
+    </div>
+    <!-- header -->
+
+    <div class="block-one bgcolour">
+      <div class="container vpadding-double">
+        <div class="vpadding-double">
+          <div class="editable">
+            <h1 data-hml-enabled="1" data-id="4534" pardot-region="title">
+              CIX pricing intelligence webinar &amp; networking drinks
+            </h1>
+          </div>
+
+          <div class="editable">
+            <h2 class="tagline" pardot-region="tagline">&nbsp;</h2>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- block-one -->
+
+    <div class="block">
+      <div class="container">
+        <div class="row vpadding">
+          <div class="col-md-8">
+            <div
+              class="editable vpadding"
+              data-hml-enabled="1"
+              data-id="4537"
+              pardot-region="main_content"
+            >
+              <h2>
+                Register for the CIX pricing intelligence webinar and networking
+                drinks
+              </h2>
+
+              <p>
+                Join us on our inaugural pricing-focused webinar and networking
+                drinks. The webinar takes stock of the progress of pricing
+                within the voluntary carbon market today and aims to shed light
+                on how we can resolve some of the underlying issues, to drive
+                more effective price discovery.&nbsp;
+              </p>
+
+              <p>&nbsp;</p>
+            </div>
+
+            <div class="row" pardot-region="block_one_table">
+              <table class="editable-table">
+                <tbody>
+                  <tr>
+                    <td class="hpadding">&nbsp;</td>
+                  </tr>
+                  <tr>
+                    <td class="vpadding">
+                      <div class="row">&nbsp;</div>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td class="vpadding">&nbsp;</td>
+                  </tr>
+                </tbody>
+              </table>
+              <!-- table -->
+            </div>
+            <!-- container -->
+          </div>
+          <!-- div-md-8 -->
+
+          <!-- signup form -->
+          <div class="col-md-4 bpadding">
+            <div class="editable">
+              <form
+                accept-charset="UTF-8"
+                action="https://marketing.climateimpactx.com/l/972473/2023-06-18/2ch5r"
+                class="form"
+                id="pardot-form"
+                method="post"
+              >
+                <style type="text/css">
+                  form.form p label {
+                    color: #000000;
+                  }
+                </style>
+                <!-- first name -->
+
+                <p class="form-field first_name pd-text required">
+                  <label class="field-label" for="972473_78907pi_972473_78907"
+                    >First Name</label
+                  >
+                  <input
+                    class="text"
+                    id="972473_78907pi_972473_78907"
+                    maxlength="40"
+                    name="972473_78907pi_972473_78907"
+                    onchange=""
+                    onfocus=""
+                    required=""
+                    size="30"
+                    type="text"
+                    value=""
+                  />
+                </p>
+
+                <div
+                  id="error_for_972473_78907pi_972473_78907"
+                  style="display: none"
+                >
+                  &nbsp;
+                </div>
+
+                <!-- last name -->
+                <p class="form-field last_name pd-text required">
+                  <label class="field-label" for="972473_78910pi_972473_78910"
+                    >Last Name</label
+                  >
+                  <input
+                    class="text"
+                    id="972473_78910pi_972473_78910"
+                    maxlength="80"
+                    name="972473_78910pi_972473_78910"
+                    onchange=""
+                    onfocus=""
+                    required=""
+                    size="30"
+                    type="text"
+                    value=""
+                  />
+                </p>
+
+                <div
+                  id="error_for_972473_78910pi_972473_78910"
+                  style="display: none"
+                >
+                  &nbsp;
+                </div>
+
+                <!-- Company -->
+                <p class="form-field company pd-text required">
+                  <label class="field-label" for="972473_78913pi_972473_78913"
+                    >Company</label
+                  >
+                  <input
+                    class="text"
+                    id="972473_78913pi_972473_78913"
+                    maxlength="255"
+                    name="972473_78913pi_972473_78913"
+                    onchange=""
+                    onfocus=""
+                    required=""
+                    size="30"
+                    type="text"
+                    value=""
+                  />
+                </p>
+
+                <div
+                  id="error_for_972473_78913pi_972473_78913"
+                  style="display: none"
+                >
+                  &nbsp;
+                </div>
+
+                <!-- Email -->
+                <p class="form-field email pd-text required">
+                  <label class="field-label" for="972473_78916pi_972473_78916"
+                    >Email</label
+                  >
+                  <input
+                    class="text"
+                    id="972473_78916pi_972473_78916"
+                    maxlength="255"
+                    name="972473_78916pi_972473_78916"
+                    onchange=""
+                    onfocus=""
+                    required=""
+                    size="30"
+                    type="email"
+                    value=""
+                  />
+                </p>
+
+                <div
+                  id="error_for_972473_78916pi_972473_78916"
+                  style="display: none"
+                >
+                  &nbsp;
+                </div>
+
+                <!-- receiving daily price assessments -->
+                <div class="row c-box">
+                  <div class="col-lg-2">&nbsp;</div>
+
+                  <div class="col-lg-10 d-lg-block">
+                    <input
+                      class="cbox"
+                      id="972473_78919pi_972473_78919_541933"
+                      name="972473_78919pi_972473_78919_541933"
+                      onchange=""
+                      type="checkbox"
+                      value="541933"
+                      checked="true"
+                    />
+                    <label
+                      class="my-label inline"
+                      for="972473_78919pi_972473_78919_541933"
+                      >Click here to start receiving daily price assessments
+                      through CIX Carbon Daily</label
+                    >
+                  </div>
+                </div>
+                <!-- sign up for the drinks -->
+                <div class="row c-box">
+                  <div class="col-lg-2">&nbsp;</div>
+
+                  <div
+                    class="col-lg-10 d-lg-block d-flex justify-content-center"
+                  >
+                    <input
+                      class="cbox2"
+                      id="972473_78922pi_972473_78922_541936"
+                      name="972473_78919pi_972473_78919_541933"
+                      onchange=""
+                      type="checkbox"
+                      value="541936"
+                      checked="true"
+                    />
+                    <label
+                      class="my-label inline"
+                      for="972473_78922pi_972473_78922_541936"
+                      >Click here to sign up for the drinks event on 13th July
+                      2023</label
+                    >
+                  </div>
+                </div>
+
+                <p>&nbsp;</p>
+                <!-- <div class="input-group mb-3">
+                <span class="input-group-text" id="basic-addon1">@</span>
+                <input type="text" class="form-control" placeholder="Username" aria-label="Username" aria-describedby="basic-addon1">
+              </div> -->
+
+                <div
+                  id="error_for_972473_78922pi_972473_78922"
+                  style="display: none"
+                >
+                  &nbsp;
+                </div>
+
+                <p
+                  style="
+                    position: absolute;
+                    width: 190px;
+                    left: -9999px;
+                    top: -9999px;
+                    visibility: hidden;
+                  "
+                >
+                  <label for="pi_extra_field">Comments</label>
+                  <input
+                    id="pi_extra_field"
+                    name="pi_extra_field"
+                    type="text"
+                  />
+                </p>
+                <!-- forces IE5-8 to correctly submit UTF8 content  --><input
+                  name="_utf8"
+                  type="hidden"
+                  value="☃"
+                />
+                <div class="row">
+                  <div class="col-lg-3">&nbsp;</div>
+
+                  <div class="col-lg-9">
+                    <p class="blue-btn">
+                      <a
+                        href="https://marketing.climateimpactx.com/l/972473/2023-06-15/2c95y"
+                        ><input accesskey="s" type="submit" value="Sign up" />
+                        <!-- <button class="blue-btn text-center">sign up</button> -->
+                      </a>
+                    </p>
+                  </div>
+                </div>
+                <!-- <div>
+            <a href="https://www.w3schools.com" class="">
+                <button>mouli</button>
+            </a>
+        </div> -->
+                <!-- delete it later -->
+
+                <!-- <p class="form-field  email pd-text required    ">
+				
+    <label class="field-label" for="972473_78916pi_972473_78916">Email</label>
+
+
+<input type="text" name="972473_78916pi_972473_78916" id="972473_78916pi_972473_78916" value="nbgc@gmail.com" class="text" size="30" maxlength="255" onchange="" onfocus="" />
+
+</p>
+<div id="error_for_972473_78916pi_972473_78916" style="display:none"></div>
+
+
+<p class="form-field #pardot-form input[type="checkbox"] { margin-right: 30px; height: 50px; float: left;} Carbon_Daily_Subscription_Sign_up pd-checkbox     ">
+
+    <label class="field-label" for="972473_78919pi_972473_78919">Carbon Daily Subscription Sign-up</label>
+
+
+<span class="value"><span><input type="checkbox" name="972473_78919pi_972473_78919_541933" id="972473_78919pi_972473_78919_541933" value="541933" onchange="" checked="checked" /><label class="inline" for="972473_78919pi_972473_78919_541933">Click here to start receiving daily price assessments through CIX Carbon Daily</label></span></span>
+
+</p>
+<div id="error_for_972473_78919pi_972473_78919" style="display:none"></div>
+
+
+<p class="form-field  Sign_up_for_Drink pd-checkbox     ">
+
+    <label class="field-label" for="972473_78922pi_972473_78922">Sign up for Drink</label>
+
+
+<span class="value"><span><input type="checkbox" name="972473_78922pi_972473_78922_541936" id="972473_78922pi_972473_78922_541936" value="541936" onchange="" checked="checked" /><label class="inline" for="972473_78922pi_972473_78922_541936">Click here to sign up for the drinks event on 13th July 2023</label></span></span>
+
+</p>
+<div id="error_for_972473_78922pi_972473_78922" style="display:none"></div> -->
+
+                <!-- end of delete it later -->
+                <div class="row">
+                  <div class="col-lg-3">&nbsp;</div>
+
+                  <div class="col-lg-9">
+                    <p class="left-align">
+                      <font size="2"
+                        >By clicking on sign up, you agree to CIX&#39;s
+                        <a
+                          href="https://uploads-ssl.webflow.com/641b1194b8c52067b6a71269/645b5c706c6bbc70a080f8e5_CIX%20Data%20Subscription%20Terms%20and%20Conditions.pdf"
+                          >Terms and Conditions of Use</a
+                        >
+                      </font>
+                    </p>
+                  </div>
+                </div>
+              </form>
+
+              <script type="text/javascript">
+                <![CDATA[
+
+                	var anchors = document.getElementsByTagName("a");
+                	for (var i=0; i<anchors.length; i++) {
+                		var anchor = anchors[i];
+                		if(anchor.getAttribute("href")&&!anchor.getAttribute("target")) {
+                			anchor.target = "_top";
+                		}
+                	}
+
+                //]]>
+              </script>
+              <input
+                id="hiddenDependentFields"
+                name="hiddenDependentFields"
+                type="hidden"
+                value=""
+              />
+              <script type="text/javascript">
+                (function () {
+                  pardot.$(document).ready(function () {
+                    (function () {
+                      var $ = window.pardot.$;
+                      window.pardot.FormDependencyMap = [];
+
+                      $(
+                        ".form-field-primary input, .form-field-primary select"
+                      ).each(function (index, input) {
+                        $(input).on(
+                          "change",
+                          window.piAjax.checkForDependentField
+                        );
+                        window.piAjax.checkForDependentField.call(input);
+                      });
+                    })();
+                  });
+                })();
+              </script>
+            </div>
+          </div>
+        </div>
+        <!-- row vpadding -->
+      </div>
+      <!-- container -->
+    </div>
+    <!-- block -->
+
+    <div class="block-two vpadding bgcolour">
+      <div class="container" pardot-region="block_two_table">
+        <table class="editable-table 1col">
+          <tbody>
+            <tr>
+              <td class="bpadding">
+                <h3>Privacy Policy</h3>
+
+                <p>
+                  <font size="1"
+                    >By signing up, you consent to receiving marketing
+                    communications from CIX on CIX related activities, including
+                    but not limited to events, publications, and more. Your
+                    personal data will be collected, used and processed in
+                    accordance with CIX&rsquo;s privacy policy
+                    <a href="https://www.climateimpactx.com/privacy">here</a
+                    >.</font
+                  >
+                </p>
+
+                <p>
+                  <font size="1"
+                    >You may opt out at any time by (a) following the
+                    instructions for opt-out in the relevant marketing
+                    communication or (b) by contacting us at
+                    <a href="pricing@climateimpactx.com"
+                      >pricing@climateimpactx.com</a
+                    >
+                  </font>
+                </p>
+                <script
+                  src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"
+                  integrity="sha256-Sk3nkD6mLTMOF0EOpNtsIry+s1CsaqQC1rVLTAy+0yc= sha512-K1qjQ+NcF2TYO/eI3M6v8EiNYZfA95pQumfvcVrTHtwQVDG+aHRqLi/ETn2uB+1JqwYqVG3LIvdm9lj6imS/pQ=="
+                  crossorigin="anonymous"
+                ></script>
+                <script>
+                  /* --------------------------------------------------------------
+        FUNCTIONS
+    ----------------------------------------------------------------- */
+                  /**
+                   * Replace all occurences of https://simplesharebuttons.com in the
+                   * social sharing list with the url of this page, and all occurrence
+                   * of "Check this out" with the page title
+                   */
+                  $(".social-list a").each(function () {
+                    // get values
+                    var thisPage = window.location.href;
+                    var url = $(this).attr("href");
+
+                    // get title of this page
+                    var title = $(document).find("title").text();
+
+                    // replace values
+                    url = url.replace("http://www.pardot.com", thisPage);
+                    url = url.replace("template-title", title);
+
+                    //update value of the link anchor
+                    $(this).attr("href", url);
+                  });
+
+                  /**
+                   * Pardot label alignment fix
+                   */
+                  pardot.$(function () {
+                    var $ = window.pardot.$;
+                    // Add label-left class to the <form> if label alignment is set to Default or Left in form styling
+                    var $labelAlignment = $("#pardot-form .field-label").css(
+                      "float"
+                    );
+                    if ($labelAlignment == "left") {
+                      $("#pardot-form").addClass("label-left");
+                    }
+                  });
+                </script>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </body>
+</html>
