@@ -1,6 +1,6 @@
-$( document ).ready(function($) {
-    $(".movebutton").on("click", function() {
-        $(".leftcolumn").toggleClass("active");
-        $(".main-content").toggleClass("active");
-    })
+$(document).ready(function ($) {
+  $(document).on("click", ".movebutton", function () {
+    $(".main-content").toggleClass("active");
+    $(".leftcolumn").toggleClass("active");
+  });
 });
